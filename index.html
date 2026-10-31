@@ -7,8 +7,8 @@
 <meta name="color-scheme" content="light dark">
 <title>ICU文法ドリル</title>
 <style>
-:root{--bg:#f4f5f7;--card:#fff;--fg:#1d1f23;--mut:#5b6270;--line:#d9dde3;--acc:#1f5fbf;--acc-fg:#fff;--accbg:#e6efff;--ok:#137a3a;--okbg:#e3f5e9;--ng:#b42318;--ngbg:#fde8e6;--warn:#8a5a00;--warnbg:#fff3d6;--sel:#dce9ff;--shadow:0 1px 3px #0002}
-@media (prefers-color-scheme:dark){:root{--bg:#111316;--card:#1c1f24;--fg:#e8eaed;--mut:#a5acb8;--line:#343a43;--acc:#7fb0ff;--acc-fg:#0b1a33;--accbg:#1b2a44;--ok:#6fd896;--okbg:#14301f;--ng:#ff8a80;--ngbg:#3a1a18;--warn:#ffcf70;--warnbg:#3a2c0d;--sel:#24385a;--shadow:0 1px 3px #0008}}
+:root{--bg:#f4f5f7;--card:#fff;--fg:#1d1f23;--mut:#5b6270;--line:#d9dde3;--acc:#1f5fbf;--acc-fg:#fff;--accbg:#e6efff;--ok:#137a3a;--okbg:#e3f5e9;--ng:#b42318;--ngbg:#fde8e6;--warn:#8a5a00;--warnbg:#fff3d6;--sel:#dce9ff;--shadow:0 1px 3px #0002;--uk:#c2410c;--ukbg:#fff0e6}
+@media (prefers-color-scheme:dark){:root{--bg:#111316;--card:#1c1f24;--fg:#e8eaed;--mut:#a5acb8;--line:#343a43;--acc:#7fb0ff;--acc-fg:#0b1a33;--accbg:#1b2a44;--ok:#6fd896;--okbg:#14301f;--ng:#ff8a80;--ngbg:#3a1a18;--warn:#ffcf70;--warnbg:#3a2c0d;--sel:#24385a;--shadow:0 1px 3px #0008;--uk:#ffa86b;--ukbg:#3a2414}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;font-size:16px;padding:0 0 calc(40px + env(safe-area-inset-bottom))}
@@ -20,6 +20,7 @@ header h1{font-size:17px;margin:0;flex:1;white-space:nowrap}
 nav{display:flex;gap:4px}
 nav button{min-height:44px;min-width:56px;padding:0 10px;border:0;background:none;color:var(--mut);font-size:15px;border-radius:8px}
 nav button.on{color:var(--acc);font-weight:700;background:var(--accbg)}
+@media (max-width:420px){nav{gap:2px}nav button{min-width:44px;padding:0 8px}}
 button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .card{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:14px;margin:12px 0}
 h2{font-size:18px;margin:4px 0 10px}
@@ -45,6 +46,7 @@ h3{font-size:16px;margin:14px 0 6px}
 u.tg{text-decoration-thickness:2px;text-underline-offset:3px;font-weight:600}
 .w{cursor:pointer;border-radius:3px}
 .w.hl{background:var(--sel)}
+.w.uk{color:var(--uk);text-decoration:underline wavy var(--uk);text-decoration-thickness:1.5px;text-underline-offset:3px}
 .choices{display:flex;flex-direction:column;gap:8px;margin:10px 0}
 .ch{display:flex;align-items:center;gap:10px;width:100%;min-height:52px;padding:8px 12px;border-radius:10px;border:2px solid var(--line);background:var(--card);text-align:left;font-size:17px}
 .ch .k{flex:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--bg);font-weight:700;font-size:15px}
@@ -89,6 +91,18 @@ td.n{text-align:right;white-space:nowrap}
 #pop .ps{color:var(--mut);font-size:12px;margin-left:6px}
 #pop .ln{margin-top:4px}
 #pop .ln b{display:inline-block;min-width:1.6em;color:var(--mut);font-weight:600}
+#pop .ukb{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:6px;width:100%;min-height:44px;margin-top:8px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--mut);font-size:15px;font-weight:600}
+#pop .ukb.on{background:var(--ukbg);border-color:var(--uk);color:var(--uk)}
+#pop .ukn{font-size:12px;color:var(--mut);margin-top:4px;text-align:center}
+.wl li{align-items:flex-start}
+.wl .hw{font-weight:700;font-size:17px}
+.wl .ln{font-size:14px}
+.wl .ln b{color:var(--mut);font-weight:600;margin-right:4px}
+.cnt{display:inline-block;font-size:13px;font-weight:700;color:var(--uk);background:var(--ukbg);border-radius:10px;padding:0 8px;margin-left:4px}
+.wl .refs{list-style:none;padding:0;margin:2px 0;font-size:13px;color:var(--mut)}
+.wl .refs li{display:block;padding:0;border:0}
+.link.qref{min-height:32px;padding:0;text-align:left;font-size:13px}
+.wl .rm{min-height:40px;padding:0 12px;font-size:14px;flex:none}
 .md h1{font-size:19px}.md h2{font-size:17px;margin-top:18px}
 .md blockquote{margin:8px 0;padding:6px 10px;border-left:3px solid var(--line);color:var(--mut)}
 .md code{background:var(--bg);padding:0 4px;border-radius:4px;font-size:.9em}
@@ -104,7 +118,7 @@ label.chk input{width:22px;height:22px}
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>ICU文法ドリル</h1><nav><button data-go="home">ホーム</button><button data-go="stats">統計</button><button data-go="trend">傾向</button></nav></div></header>
+<header><div class="wrap"><h1>ICU文法ドリル</h1><nav><button data-go="home">ホーム</button><button data-go="words">単語</button><button data-go="stats">統計</button><button data-go="trend">傾向</button></nav></div></header>
 <main id="app" class="wrap"><div class="card">読み込み中…</div></main>
 <div id="pop" role="tooltip" aria-live="polite"></div>
 <div id="cpybox"><div class="note" style="margin-bottom:6px">自動コピーできませんでした。全選択してコピーしてください</div><textarea id="cpyta" readonly></textarea><p class="center" style="margin:8px 0 0"><button class="btn" id="cpyx">閉じる</button></p></div>
@@ -139,6 +153,26 @@ function record(id,ok){
   save();
 }
 
+// ---- わからない単語のチェック（別キー。上の学習記録 icu_grammar_v1 には触れない） ----
+// U.w: {見出し語(glosses.json のキー):{zh,ja,pos, refs:[{q:問題ID|null, y:年|null, d:チェックした日}]}}
+// 1つの問題につき1回までチェック（同じ問題でもう一度タップで解除）。チェック回数 = refs の数
+const UKEY='icu_grammar_unknown_v1';
+let U;
+function uLoad(){try{U=JSON.parse(localStorage.getItem(UKEY))}catch(e){U=null}
+  if(!U||typeof U!=='object'||Array.isArray(U))U={};U.v=1;if(!U.w||typeof U.w!=='object'||Array.isArray(U.w))U.w={};
+  for(const k in U.w){const e=U.w[k];if(!e||!Array.isArray(e.refs)||!e.refs.length)delete U.w[k]}}
+function uSave(){try{localStorage.setItem(UKEY,JSON.stringify(U))}catch(e){}}
+function uToggle(k,g,ref){ // 戻り値: チェック後の状態
+  let e=U.w[k];const i=e?e.refs.findIndex(r=>r.q===ref.q):-1;
+  if(i>=0){e.refs.splice(i,1);if(!e.refs.length)delete U.w[k];uSave();return false}
+  if(!e)e=U.w[k]={zh:g.zh||'',ja:g.ja||'',pos:g.pos||'',refs:[]};
+  e.refs.push({q:ref.q,y:ref.y,d:today()});uSave();return true;
+}
+function uList(){return Object.entries(U.w).map(([k,e])=>({k,e,n:e.refs.length,last:e.refs.reduce((m,r)=>r.d>m?r.d:m,'')}))
+  .sort((a,b)=>b.n-a.n||(a.last<b.last?1:a.last>b.last?-1:0)||a.k.localeCompare(b.k))}
+const refLabel=r=>{const q=r.q&&BY[r.q];return q?srcLabel(q)+'（'+q.id+'）':(r.y?r.y+'年 ':'')+'（問題外）'};
+function markAll(){document.querySelectorAll('.w').forEach(el=>{const h=lookup(el.textContent);el.classList.toggle('uk',!!(h&&U.w[h[0]]))})}
+
 // ---- 単語の意味（glosses.json） ----
 function lookup(w){
   let l=w.toLowerCase().replace(/[’‘]/g,"'");
@@ -147,13 +181,14 @@ function lookup(w){
   return null;
 }
 const WRE=/[A-Za-z][A-Za-z'’\-]*[A-Za-z]|[A-Za-z]/g;
+const wspan=(h,m)=>'<span class="w'+(U&&U.w[h[0]]?' uk':'')+'">'+esc(m)+'</span>';
 function wz(t){ // テキスト→単語ごとに span（辞書にある語のみタップ可能）
   let out='',i=0;t=String(t??'');
   t.replace(WRE,(m,off)=>{out+=esc(t.slice(i,off));
     let hit=lookup(m);
     if(!hit&&m.includes('-')){ // ハイフン語は辞書になければ分割
-      out+=m.split(/(-)/).map(p=>p==='-'?'-':(lookup(p)?'<span class="w">'+esc(p)+'</span>':esc(p))).join('');
-    }else out+=hit?'<span class="w">'+esc(m)+'</span>':esc(m);
+      out+=m.split(/(-)/).map(p=>{if(p==='-')return'-';const h=lookup(p);return h?wspan(h,p):esc(p)}).join('');
+    }else out+=hit?wspan(hit,m):esc(m);
     i=off+m.length;return m});
   return out+esc(t.slice(i));
 }
@@ -170,6 +205,10 @@ function showPop(el){
   if(popEl)popEl.classList.remove('hl');popEl=el;el.classList.add('hl');
   pop.innerHTML='<div><span class="hw">'+esc(k)+'</span><span class="ps">'+esc(g.pos||'')+(g.lemma?' ← '+esc(g.lemma):'')+'</span></div>'+
    '<div class="ln" lang="zh-Hans"><b>中</b>'+esc(g.zh)+'</div><div class="ln" lang="ja"><b>日</b>'+esc(g.ja)+'</div>';
+  const ref=refOf(el),e=U.w[k],on=!!(e&&e.refs.some(r=>r.q===ref.q));
+  pop.innerHTML+='<button type="button" class="ukb'+(on?' on':'')+'" aria-pressed="'+on+'">✓ わからない</button>'+
+   (on?'<div class="ukn">この問題でチェック済み（もう一度タップで解除）<br>チェック計'+e.refs.length+'回</div>':e?'<div class="ukn">ほかの問題で'+e.refs.length+'回チェック済み</div>':'');
+  pop.querySelector('.ukb').onclick=()=>{uToggle(k,g,ref);markAll();showPop(el)};
   pop.style.display='block';
   const vw=document.documentElement.clientWidth,w=Math.min(340,vw-24);pop.style.width=w+'px';
   const r=el.getBoundingClientRect();
@@ -180,8 +219,14 @@ function showPop(el){
   const top=(below+h<window.innerHeight-8||above<8)?below:above;
   pop.style.top=(top+window.scrollY)+'px';
 }
+function refOf(el){ // 単語が出てきた問題（年度別全文の本文なら、いま解いている問題）
+  const c=el.closest('[data-qid]')||(el.closest('.passage')&&app.querySelector('.qcard[data-qid]'));
+  const q=c&&BY[c.dataset.qid];if(q)return{q:q.id,y:q.year};
+  const p=el.closest('[data-yr]');return{q:null,y:p?+p.dataset.yr:null};
+}
 function hidePop(){pop.style.display='none';if(popEl){popEl.classList.remove('hl');popEl=null}}
 document.addEventListener('click',e=>{
+  if(e.target.closest('#pop'))return;
   const w=e.target.closest('.w');
   if(w)showPop(w);else hidePop();
 },true);
@@ -198,7 +243,7 @@ function badges(q){
 // ---- 1問の表示 ----
 // opts: {passage:段落テキスト(年度別Part I用), noText:true(年度別Part II: 本文側に表示), onAnswer(ok), next:{label,fn}}
 function qCard(q,opts={}){
-  const el=document.createElement('div');el.className='card'+(opts.cls?' '+opts.cls:'');
+  const el=document.createElement('div');el.className='card'+(opts.cls?' '+opts.cls:'');el.dataset.qid=q.id;
   let h='<div class="meta"><span>'+esc(srcLabel(q))+'</span><span class="tag">'+esc(catName(q.category))+'</span></div>';
   if(opts.passage)h+='<p class="sent">'+rich(opts.passage)+'</p>';
   else if(opts.noText)h+='<p class="ctx">'+rich(q.sentence)+'</p>';
@@ -257,7 +302,7 @@ function stopTimer(){if(timerId){clearInterval(timerId);timerId=null}}
 function setNav(v){document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.go===v))}
 document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>route(b.dataset.go)));
 function route(v,arg){hidePop();$('#cpybox').style.display='none';stopTimer();document.querySelector('.ybar')?.remove();setNav(v);window.scrollTo(0,0);
-  ({home,stats,trend,quiz,year}[v]||home)(arg);}
+  ({home,stats,trend,quiz,year,words}[v]||home)(arg);}
 
 const F={part:'all',cat:'all',n:5};
 function home(){
@@ -322,7 +367,7 @@ function year({y}){
     if(useTimer)timerId=setInterval(()=>{const e=$('#tmv');if(e)e.textContent=mmss(Math.floor((Date.now()-t0)/1000))},1000);
     // 本文: 段落ごと。空欄 ( 46 ) をボタンに
     const paras=P.part2_text.split(/\n\s*\n/);
-    app.innerHTML='<div class="card"><h3 style="margin-top:0">Part II</h3><div class="passage">'+paras.map((pp,k)=>'<p data-p="'+k+'">'+pp.split(/(\(\s*\d+\s*\))/).map(s=>{const m=s.match(/^\(\s*(\d+)\s*\)$/);return m&&P.blank_map[m[1]]?'<button class="bl" data-n="'+m[1]+'">( '+m[1]+' )</button>':wz(s)}).join('')+'</p>').join('')+'</div></div><div id="p1"></div><div id="yend"></div>';
+    app.innerHTML='<div class="card"><h3 style="margin-top:0">Part II</h3><div class="passage" data-yr="'+esc(y)+'">'+paras.map((pp,k)=>'<p data-p="'+k+'">'+pp.split(/(\(\s*\d+\s*\))/).map(s=>{const m=s.match(/^\(\s*(\d+)\s*\)$/);return m&&P.blank_map[m[1]]?'<button class="bl" data-n="'+m[1]+'">( '+m[1]+' )</button>':wz(s)}).join('')+'</p>').join('')+'</div></div><div id="p1"></div><div id="yend"></div>';
     app.querySelectorAll('.bl').forEach(b=>b.addEventListener('click',()=>{const c=app.querySelector('.qcard');if(c)c.scrollIntoView({behavior:'smooth',block:'nearest'})}));
     const upd=()=>{$('#yp').textContent=idx};
     const step=()=>{
@@ -377,9 +422,9 @@ function stats(){
    '<div class="card"><h2>タグ別（苦手順）</h2>'+(tagRows?'<div class="tw"><table>'+head+tagRows+'</table></div>':'<p class="note">タグ付きの問題（despite/although など）を解くと表示されます。</p>')+'</div>'+
    '<div class="card"><h2>よく間違える問題</h2>'+(d.weak.length?'<ul class="list">'+d.weak.slice(0,15).map((q,i)=>{const r=S.q[q.id];return'<li><span class="grow">'+(i+1)+'. '+esc(srcLabel(q))+'<br><span class="note">'+esc(catName(q.category))+' · ×'+r.m+' / '+r.n+'回</span></span><button class="btn" data-id="'+q.id+'" style="min-height:44px;padding:0 12px">解く</button></li>'}).join('')+'</ul>':'<p class="note">まだありません。</p>')+'</div>'+
    '<div class="card"><h2>年別成績</h2><div class="tw"><table>'+head+rowsOf(d.yr,k=>k+'年',{sort:(a,b)=>b[0]-a[0]})+'</table></div>'+(runs.length?'<h3>年度別全文の記録</h3><ul class="list">'+runs.map(r=>'<li><span class="grow">'+r.y+'年　'+r.sc+'/'+r.t+'（'+pct(r.sc,r.t)+'%）</span><span class="note">'+mmss(r.sec)+' · '+esc(r.d.slice(5))+'</span></li>').join('')+'</ul>':'')+'</div>'+
-   '<div class="card"><button class="btn pri full" id="cpy">記録をコピー</button><p class="note">統計をテキストでコピーします（コーチに貼り付け用）。記録はこの端末内にだけ保存され、どこにも送信されません。</p><p class="center"><button class="link" id="reset">記録をリセット</button></p></div>';
+   '<div class="card"><button class="btn full" id="gow" style="margin-bottom:8px">チェックした単語（'+Object.keys(U.w).length+'語）</button><button class="btn pri full" id="cpy">記録をコピー</button><p class="note">統計をテキストでコピーします（コーチに貼り付け用）。記録はこの端末内にだけ保存され、どこにも送信されません。</p><p class="center"><button class="link" id="reset">記録をリセット</button></p></div>';
   app.querySelectorAll('[data-id]').forEach(b=>b.onclick=()=>route('quiz',{title:'1問練習',qs:[BY[b.dataset.id]]}));
-  $('#cpy').onclick=copyRec;
+  $('#cpy').onclick=copyRec;$('#gow').onclick=()=>route('words');
   $('#reset').onclick=()=>{if(confirm('この端末の記録をすべて消去します。よろしいですか？')){S={};load();save();stats()}};
 }
 function recText(){
@@ -395,6 +440,9 @@ function recText(){
   if(S.runs.length)L.push('■年度別全文\n'+S.runs.slice(-10).map(r=>'  '+r.d+' '+r.y+'年 '+r.sc+'/'+r.t+' '+mmss(r.sec)).join('\n'));
   if(d.weak.length)L.push('■よく間違える問題\n'+d.weak.slice(0,20).map(q=>{const r=S.q[q.id];return'  '+q.id+'（'+srcLabel(q)+' / '+catName(q.category)+'）×'+r.m+'/'+r.n+' 正解 '+q.answer+') '+q.choices[q.answer]}).join('\n'));
   const days=Object.entries(S.days).slice(-14);if(days.length)L.push('■日別回答数\n'+days.map(([k,v])=>'  '+k+' '+v[1]+'/'+v[0]).join('\n'));
+  const ul=uList();
+  L.push('■チェックした単語（わからない） '+ul.length+'語'+(ul.length?'\n'+ul.map(({k,e,n,last})=>{const g=GL[k]||e;
+    return'  '+k+(g.pos?'（'+g.pos+'）':'')+' ×'+n+' 最終 '+last+'\n    中: '+g.zh+'\n    日: '+g.ja+'\n    出題: '+e.refs.map(r=>{const q=r.q&&BY[r.q];return q?q.year+'年 '+q.id:(r.y?r.y+'年 ':'')+'問題外'}).join(', ')}).join('\n'):'\n  なし'));
   L.push('■データ\n'+JSON.stringify({q:S.q,runs:S.runs}));
   return L.join('\n');
 }
@@ -404,6 +452,24 @@ function copyRec(){const t=recText();const b=$('#cpy');
   const fb=()=>{$('#cpyta').value=t;$('#cpybox').style.display='block';$('#cpyta').focus();$('#cpyta').select()};
   if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(done,fb);else fb()}
 $('#cpyx').onclick=()=>$('#cpybox').style.display='none';
+
+// ---- チェックした単語 ----
+function words(){
+  const L=uList();
+  app.innerHTML='<div class="card"><h2>チェックした単語 <span class="note">'+L.length+'語</span></h2>'+
+   (L.length?'<p class="note">チェック回数の多い順。問題の中で単語をタップ →「✓ わからない」で追加・解除できます。</p><ul class="list wl">'+L.map(({k,e,n})=>{
+     const g=GL[k]||e;const ds=[...new Set(e.refs.map(r=>r.d))].sort();
+     return'<li><span class="grow"><span class="hw">'+esc(k)+'</span> <span class="note">'+esc(g.pos||'')+'</span><span class="cnt">×'+n+'</span>'+
+      '<div class="ln" lang="zh-Hans"><b>中</b>'+esc(g.zh)+'</div><div class="ln" lang="ja"><b>日</b>'+esc(g.ja)+'</div>'+
+      '<ul class="refs">'+e.refs.map(r=>'<li>出題: '+(r.q&&BY[r.q]?'<button class="link qref" data-id="'+esc(r.q)+'">'+esc(refLabel(r))+'</button>':esc(refLabel(r)))+'</li>').join('')+'</ul>'+
+      '<div class="note">日付: '+esc(ds.join(', '))+'</div></span><button class="btn rm" data-k="'+esc(k)+'" aria-label="'+esc(k)+' を削除">削除</button></li>'}).join('')+'</ul>'+
+      '<p class="center"><button class="link" id="wclr">すべて削除</button></p>'
+    :'<p class="note">まだありません。問題の中で単語をタップして「✓ わからない」を押すと、ここに追加されます。</p>')+
+   '<p class="note">この一覧は「記録をコピー」にも含まれます。端末（ブラウザ）内にだけ保存されます。</p></div>';
+  app.querySelectorAll('.rm').forEach(b=>b.onclick=()=>{delete U.w[b.dataset.k];uSave();words();toast('削除しました')});
+  app.querySelectorAll('.qref').forEach(b=>b.onclick=()=>route('quiz',{title:'1問練習',qs:[BY[b.dataset.id]]}));
+  const c=$('#wclr');if(c)c.onclick=()=>{if(confirm('チェックした単語をすべて削除します。よろしいですか？（学習記録は消えません）')){U.w={};uSave();words()}};
+}
 
 // ---- 傾向（trend.md を表示） ----
 function md(src){
@@ -428,9 +494,9 @@ function md(src){
 function trend(){app.innerHTML='<div class="card md" lang="zh-Hans">'+md(TREND)+'</div>';}
 
 // ---- 起動 ----
-load();
+load();uLoad();
 Promise.all(['bank.json','passages.json','glosses.json'].map(f=>fetch('data/'+f).then(r=>{if(!r.ok)throw f;return r.json()})).concat(fetch('data/trend.md').then(r=>r.text())))
-.then(([b,p,g,t])=>{BANK=b;BANK.forEach(q=>BY[q.id]=q);PAS=p;GL=g;TREND=t;const h=location.hash.slice(1);route(['stats','trend'].includes(h)?h:'home')})
+.then(([b,p,g,t])=>{BANK=b;BANK.forEach(q=>BY[q.id]=q);PAS=p;GL=g;TREND=t;const h=location.hash.slice(1);route(['stats','trend','words'].includes(h)?h:'home')})
 .catch(e=>{app.innerHTML='<div class="card">データを読み込めませんでした（'+esc(e)+'）。再読み込みしてください。</div>'});
 </script>
 </body>
