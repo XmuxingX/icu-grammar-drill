@@ -91,6 +91,7 @@ td.n{text-align:right;white-space:nowrap}
 #pop .ps{color:var(--mut);font-size:12px;margin-left:6px}
 #pop .ln{margin-top:4px}
 #pop .ln b{display:inline-block;min-width:1.6em;color:var(--mut);font-weight:600}
+.ln.nd{color:var(--mut);font-size:13px}
 #pop .ukb{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:6px;width:100%;min-height:44px;margin-top:8px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--mut);font-size:15px;font-weight:600}
 #pop .ukb.on{background:var(--ukbg);border-color:var(--uk);color:var(--uk)}
 #pop .ukn{font-size:12px;color:var(--mut);margin-top:4px;text-align:center}
@@ -154,24 +155,38 @@ function record(id,ok){
 }
 
 // ---- わからない単語のチェック（別キー。上の学習記録 icu_grammar_v1 には触れない） ----
-// U.w: {見出し語(glosses.json のキー):{zh,ja,pos, refs:[{q:問題ID|null, y:年|null, d:チェックした日}]}}
+// U.w: {キー:{zh,ja,pos,[nd:1], refs:[{q:問題ID|null, y:年|null, d:チェックした日}]}}
+// キー = glosses.json の見出し語。変化形（acclaimed, cities など原形の意味を表示する語）は原形（acclaim, city）のキーで記録。
+// 辞書にない語（固有名詞など）は小文字にした形で記録し nd:1 を付ける。
+// 以前のバージョンで変化形のキー（例 "dedicated"）のまま保存された項目は書き換えず、読み出し時に原形へまとめて扱う。
 // 1つの問題につき1回までチェック（同じ問題でもう一度タップで解除）。チェック回数 = refs の数
 const UKEY='icu_grammar_unknown_v1';
 let U;
 function uLoad(){try{U=JSON.parse(localStorage.getItem(UKEY))}catch(e){U=null}
   if(!U||typeof U!=='object'||Array.isArray(U))U={};U.v=1;if(!U.w||typeof U.w!=='object'||Array.isArray(U.w))U.w={};
   for(const k in U.w){const e=U.w[k];if(!e||!Array.isArray(e.refs)||!e.refs.length)delete U.w[k]}}
-function uSave(){try{localStorage.setItem(UKEY,JSON.stringify(U))}catch(e){}}
-function uToggle(k,g,ref){ // 戻り値: チェック後の状態
-  let e=U.w[k];const i=e?e.refs.findIndex(r=>r.q===ref.q):-1;
-  if(i>=0){e.refs.splice(i,1);if(!e.refs.length)delete U.w[k];uSave();return false}
-  if(!e)e=U.w[k]={zh:g.zh||'',ja:g.ja||'',pos:g.pos||'',refs:[]};
+let UG=null; // 原形キー → 保存されているキーの一覧（キャッシュ）
+function uSave(){UG=null;try{localStorage.setItem(UKEY,JSON.stringify(U))}catch(e){}}
+// 原形の意味を表示する変化形（zh が「【原形 的…】」で始まる語）だけ原形にまとめる。
+// dedicated(adj) や including(prep) のように独自の意味を持つ語はそのまま。
+function rootOf(k){const g=GL[k];return g&&g.lemma&&(g.zh||'').startsWith('【'+g.lemma+' 的')?g.lemma:k}
+function uG(){if(!UG){UG={};for(const k in U.w)(UG[rootOf(k)]||(UG[rootOf(k)]=[])).push(k)}return UG}
+function uRefs(r){return(uG()[r]||[]).flatMap(k=>U.w[k].refs)}
+function uToggle(r,g,ref){ // r=原形キー。戻り値: チェック後の状態
+  for(const k of uG()[r]||[]){const e=U.w[k],i=e.refs.findIndex(x=>x.q===ref.q);
+    if(i>=0){e.refs.splice(i,1);if(!e.refs.length)delete U.w[k];uSave();return false}}
+  let e=U.w[r];
+  if(!e){e=U.w[r]=g?{zh:g.zh||'',ja:g.ja||'',pos:g.pos||'',refs:[]}:{zh:'',ja:'',pos:'',nd:1,refs:[]}}
   e.refs.push({q:ref.q,y:ref.y,d:today()});uSave();return true;
 }
-function uList(){return Object.entries(U.w).map(([k,e])=>({k,e,n:e.refs.length,last:e.refs.reduce((m,r)=>r.d>m?r.d:m,'')}))
+function uDel(r){for(const k of uG()[r]||[])delete U.w[k];uSave()}
+function uList(){return Object.entries(uG()).map(([k,ks])=>{const refs=ks.flatMap(x=>U.w[x].refs);
+    return{k,e:Object.assign({},U.w[ks.includes(k)?k:ks[0]],{refs}),n:refs.length,last:refs.reduce((m,r)=>r.d>m?r.d:m,'')}})
   .sort((a,b)=>b.n-a.n||(a.last<b.last?1:a.last>b.last?-1:0)||a.k.localeCompare(b.k))}
+const gOf=(k,e)=>{const g=GL[k];return g&&(g.zh||g.ja)?g:e&&(e.zh||e.ja)?e:null}; // 一覧・コピー用の意味（なければ null）
+const ND='意味データなし（固有名詞など）';
 const refLabel=r=>{const q=r.q&&BY[r.q];return q?srcLabel(q)+'（'+q.id+'）':(r.y?r.y+'年 ':'')+'（問題外）'};
-function markAll(){document.querySelectorAll('.w').forEach(el=>{const h=lookup(el.textContent);el.classList.toggle('uk',!!(h&&U.w[h[0]]))})}
+function markAll(){const G=uG();document.querySelectorAll('.w').forEach(el=>el.classList.toggle('uk',!!G[wInfo(el.textContent).r]))}
 
 // ---- 単語の意味（glosses.json） ----
 function lookup(w){
@@ -180,15 +195,19 @@ function lookup(w){
   for(const c of cands)if(GL[c])return[c,GL[c]];
   return null;
 }
-const WRE=/[A-Za-z][A-Za-z'’\-]*[A-Za-z]|[A-Za-z]/g;
-const wspan=(h,m)=>'<span class="w'+(U&&U.w[h[0]]?' uk':'')+'">'+esc(m)+'</span>';
-function wz(t){ // テキスト→単語ごとに span（辞書にある語のみタップ可能）
+const normW=w=>w.toLowerCase().replace(/[’‘]/g,"'").replace(/'s$/,'').replace(/^'+|'+$/g,'');
+// k=見出し（辞書のキー、なければ正規化した形）, g=辞書項目|null, r=チェック記録用のキー（変化形は原形）
+function wInfo(w){const h=lookup(w);if(h)return{k:h[0],g:h[1],r:rootOf(h[0])};const k=normW(w)||w.toLowerCase();return{k,g:null,r:k}}
+// 英単語（数字・序数 16th・1990s は数字として扱いタップ対象外）
+const WRE=/\d[\d,.]*(?:st|nd|rd|th|s)?\b|[A-Za-z][A-Za-z'’\-]*[A-Za-z]|[A-Za-z]/g;
+const wspan=m=>{const x=wInfo(m);return'<span class="w'+(x.g?'':' nd')+(U&&GL&&uG()[x.r]?' uk':'')+'">'+esc(m)+'</span>'};
+function wz(t){ // テキスト→単語ごとに span（すべての英単語をタップ可能。辞書にない語は「意味データなし」）
   let out='',i=0;t=String(t??'');
   t.replace(WRE,(m,off)=>{out+=esc(t.slice(i,off));
-    let hit=lookup(m);
-    if(!hit&&m.includes('-')){ // ハイフン語は辞書になければ分割
-      out+=m.split(/(-)/).map(p=>{if(p==='-')return'-';const h=lookup(p);return h?wspan(h,p):esc(p)}).join('');
-    }else out+=hit?wspan(hit,m):esc(m);
+    if(/^\d/.test(m))out+=esc(m);
+    else if(!lookup(m)&&m.includes('-')){ // ハイフン語は辞書になければ分割
+      out+=m.split(/(-+)/).map(p=>!p?'':/^-/.test(p)?p:wspan(p)).join('');
+    }else out+=wspan(m);
     i=off+m.length;return m});
   return out+esc(t.slice(i));
 }
@@ -200,15 +219,15 @@ function rich(t){ // [[下線]] と ( ___ ) を処理
 }
 const pop=$('#pop');let popEl=null;
 function showPop(el){
-  const hit=lookup(el.textContent);if(!hit)return;
-  const[k,g]=hit;
+  const{k,g,r:rk}=wInfo(el.textContent);if(!k)return;
   if(popEl)popEl.classList.remove('hl');popEl=el;el.classList.add('hl');
-  pop.innerHTML='<div><span class="hw">'+esc(k)+'</span><span class="ps">'+esc(g.pos||'')+(g.lemma?' ← '+esc(g.lemma):'')+'</span></div>'+
-   '<div class="ln" lang="zh-Hans"><b>中</b>'+esc(g.zh)+'</div><div class="ln" lang="ja"><b>日</b>'+esc(g.ja)+'</div>';
-  const ref=refOf(el),e=U.w[k],on=!!(e&&e.refs.some(r=>r.q===ref.q));
+  pop.innerHTML=g?'<div><span class="hw">'+esc(k)+'</span><span class="ps">'+esc(g.pos||'')+(g.lemma?' ← '+esc(g.lemma):'')+'</span></div>'+glossHtml(g)
+   :'<div><span class="hw">'+esc(el.textContent)+'</span></div><div class="ln nd">'+ND+'</div>';
+  const ref=refOf(el),refs=uRefs(rk),on=refs.some(r=>r.q===ref.q);
   pop.innerHTML+='<button type="button" class="ukb'+(on?' on':'')+'" aria-pressed="'+on+'">✓ わからない</button>'+
-   (on?'<div class="ukn">この問題でチェック済み（もう一度タップで解除）<br>チェック計'+e.refs.length+'回</div>':e?'<div class="ukn">ほかの問題で'+e.refs.length+'回チェック済み</div>':'');
-  pop.querySelector('.ukb').onclick=()=>{uToggle(k,g,ref);markAll();showPop(el)};
+   (rk!==k?'<div class="ukn">原形「'+esc(rk)+'」としてまとめて記録</div>':'')+
+   (on?'<div class="ukn">この問題でチェック済み（もう一度タップで解除）<br>チェック計'+refs.length+'回</div>':refs.length?'<div class="ukn">ほかの問題で'+refs.length+'回チェック済み</div>':'');
+  pop.querySelector('.ukb').onclick=()=>{uToggle(rk,g&&(rk===k?g:GL[rk]||g),ref);markAll();showPop(el)};
   pop.style.display='block';
   const vw=document.documentElement.clientWidth,w=Math.min(340,vw-24);pop.style.width=w+'px';
   const r=el.getBoundingClientRect();
@@ -219,6 +238,7 @@ function showPop(el){
   const top=(below+h<window.innerHeight-8||above<8)?below:above;
   pop.style.top=(top+window.scrollY)+'px';
 }
+function glossHtml(g){return g&&(g.zh||g.ja)?'<div class="ln" lang="zh-Hans"><b>中</b>'+esc(g.zh||'—')+'</div><div class="ln" lang="ja"><b>日</b>'+esc(g.ja||'—')+'</div>':'<div class="ln nd">'+ND+'</div>'}
 function refOf(el){ // 単語が出てきた問題（年度別全文の本文なら、いま解いている問題）
   const c=el.closest('[data-qid]')||(el.closest('.passage')&&app.querySelector('.qcard[data-qid]'));
   const q=c&&BY[c.dataset.qid];if(q)return{q:q.id,y:q.year};
@@ -378,7 +398,7 @@ function year({y}){
         const card=qCard(q,{noText:true,cls:'qcard',onAnswer:(ok,sel)=>{
           if(ok)score++;else wrong.push(q);
           bl.classList.remove('cur');bl.classList.add(ok?'ok':'ng');
-          bl.innerHTML=esc(q.exam_q)+' '+(ok?'':'<s>'+esc(q.choices[sel])+'</s> ')+esc(q.choices[q.answer]);
+          bl.innerHTML=esc(q.exam_q)+' '+(ok?'':'<s>'+wz(q.choices[sel])+'</s> ')+wz(q.choices[q.answer]);
           idx++;upd()},next:{label:'次へ',fn:()=>{step()}}});
         // 現在の段落の直後にカードを挿入（本文とボタンが重ならない）
         para.after(card);
@@ -441,8 +461,8 @@ function recText(){
   if(d.weak.length)L.push('■よく間違える問題\n'+d.weak.slice(0,20).map(q=>{const r=S.q[q.id];return'  '+q.id+'（'+srcLabel(q)+' / '+catName(q.category)+'）×'+r.m+'/'+r.n+' 正解 '+q.answer+') '+q.choices[q.answer]}).join('\n'));
   const days=Object.entries(S.days).slice(-14);if(days.length)L.push('■日別回答数\n'+days.map(([k,v])=>'  '+k+' '+v[1]+'/'+v[0]).join('\n'));
   const ul=uList();
-  L.push('■チェックした単語（わからない） '+ul.length+'語'+(ul.length?'\n'+ul.map(({k,e,n,last})=>{const g=GL[k]||e;
-    return'  '+k+(g.pos?'（'+g.pos+'）':'')+' ×'+n+' 最終 '+last+'\n    中: '+g.zh+'\n    日: '+g.ja+'\n    出題: '+e.refs.map(r=>{const q=r.q&&BY[r.q];return q?q.year+'年 '+q.id:(r.y?r.y+'年 ':'')+'問題外'}).join(', ')}).join('\n'):'\n  なし'));
+  L.push('■チェックした単語（わからない） '+ul.length+'語'+(ul.length?'\n'+ul.map(({k,e,n,last})=>{const g=gOf(k,e);
+    return'  '+k+(g&&g.pos?'（'+g.pos+'）':'')+' ×'+n+' 最終 '+last+(g?'\n    中: '+(g.zh||'—')+'\n    日: '+(g.ja||'—'):'\n    '+ND)+'\n    出題: '+e.refs.map(r=>{const q=r.q&&BY[r.q];return q?q.year+'年 '+q.id:(r.y?r.y+'年 ':'')+'問題外'}).join(', ')}).join('\n'):'\n  なし'));
   L.push('■データ\n'+JSON.stringify({q:S.q,runs:S.runs}));
   return L.join('\n');
 }
@@ -458,15 +478,14 @@ function words(){
   const L=uList();
   app.innerHTML='<div class="card"><h2>チェックした単語 <span class="note">'+L.length+'語</span></h2>'+
    (L.length?'<p class="note">チェック回数の多い順。問題の中で単語をタップ →「✓ わからない」で追加・解除できます。</p><ul class="list wl">'+L.map(({k,e,n})=>{
-     const g=GL[k]||e;const ds=[...new Set(e.refs.map(r=>r.d))].sort();
-     return'<li><span class="grow"><span class="hw">'+esc(k)+'</span> <span class="note">'+esc(g.pos||'')+'</span><span class="cnt">×'+n+'</span>'+
-      '<div class="ln" lang="zh-Hans"><b>中</b>'+esc(g.zh)+'</div><div class="ln" lang="ja"><b>日</b>'+esc(g.ja)+'</div>'+
+     const g=gOf(k,e);const ds=[...new Set(e.refs.map(r=>r.d))].sort();
+     return'<li><span class="grow"><span class="hw">'+esc(k)+'</span> <span class="note">'+esc(g&&g.pos||'')+'</span><span class="cnt">×'+n+'</span>'+glossHtml(g)+
       '<ul class="refs">'+e.refs.map(r=>'<li>出題: '+(r.q&&BY[r.q]?'<button class="link qref" data-id="'+esc(r.q)+'">'+esc(refLabel(r))+'</button>':esc(refLabel(r)))+'</li>').join('')+'</ul>'+
       '<div class="note">日付: '+esc(ds.join(', '))+'</div></span><button class="btn rm" data-k="'+esc(k)+'" aria-label="'+esc(k)+' を削除">削除</button></li>'}).join('')+'</ul>'+
       '<p class="center"><button class="link" id="wclr">すべて削除</button></p>'
     :'<p class="note">まだありません。問題の中で単語をタップして「✓ わからない」を押すと、ここに追加されます。</p>')+
    '<p class="note">この一覧は「記録をコピー」にも含まれます。端末（ブラウザ）内にだけ保存されます。</p></div>';
-  app.querySelectorAll('.rm').forEach(b=>b.onclick=()=>{delete U.w[b.dataset.k];uSave();words();toast('削除しました')});
+  app.querySelectorAll('.rm').forEach(b=>b.onclick=()=>{uDel(b.dataset.k);words();toast('削除しました')});
   app.querySelectorAll('.qref').forEach(b=>b.onclick=()=>route('quiz',{title:'1問練習',qs:[BY[b.dataset.id]]}));
   const c=$('#wclr');if(c)c.onclick=()=>{if(confirm('チェックした単語をすべて削除します。よろしいですか？（学習記録は消えません）')){U.w={};uSave();words()}};
 }
@@ -496,7 +515,7 @@ function trend(){app.innerHTML='<div class="card md" lang="zh-Hans">'+md(TREND)+
 // ---- 起動 ----
 load();uLoad();
 Promise.all(['bank.json','passages.json','glosses.json'].map(f=>fetch('data/'+f).then(r=>{if(!r.ok)throw f;return r.json()})).concat(fetch('data/trend.md').then(r=>r.text())))
-.then(([b,p,g,t])=>{BANK=b;BANK.forEach(q=>BY[q.id]=q);PAS=p;GL=g;TREND=t;const h=location.hash.slice(1);route(['stats','trend','words'].includes(h)?h:'home')})
+.then(([b,p,g,t])=>{BANK=b;BANK.forEach(q=>BY[q.id]=q);PAS=p;GL=g;UG=null;TREND=t;const h=location.hash.slice(1);route(['stats','trend','words'].includes(h)?h:'home')})
 .catch(e=>{app.innerHTML='<div class="card">データを読み込めませんでした（'+esc(e)+'）。再読み込みしてください。</div>'});
 </script>
 </body>
