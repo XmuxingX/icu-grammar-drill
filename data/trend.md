@@ -1,22 +1,35 @@
-# ICU 英语 Reading 语法・词汇题 出题倾向分析（2014–2025）
+# ICU 英语 Reading 语法・词汇题 出题倾向分析（2004–2025）
 
-> 数据来源：`bank.json`（207 题 = Part II 166 题 + Part I 41 题）。下面的数字全部是对 bank.json 实际计数的结果，没有估计。
-> 注意：Part II 2014–2024 和 Part I 2014–2024 的答案是自己解出来的（有 confidence 标注），只有 2025 年有官方答案。
+> 数据来源：`data/bank.json`（452 题 = Part II 366 题 + Part I 86 题）。数字全部是实际计数。
+> 答案来源：2004–2013 全部是自己解出来的（`answer_source: "derived"`，原 PDF 没有答案）；2014–2024 也是自己解出来的；只有 2025 年有官方答案。
 
 ## 1. 题型格式的变化
 
-| 年份 | Part II 填空题数 | 题号 | 备注 |
-|---|---|---|---|
-| 2014–2016 | 20 | Q51–70 | Part I 是 Q31–50 |
-| 2017–2024 | 12 | Q55–66 | Part I 是 Q31–54 |
-| 2025 | **10** | Q46–55 | Part I 是 Q26–45；Reading 部分 45 分钟 |
+| 年份 | Part II 填空题数 | 题号 | Part I（阅读）题号 | 备注 |
+|---|---|---|---|---|
+| 2004–2006 | 20 | Q66–85 | Q46–65 | Listening 4 个部分（Q1–45） |
+| 2007–2008 | 20 | Q56–75 | Q36–55 | Listening 4 个部分（Q1–35） |
+| 2009–2016 | 20 | Q51–70 | Q31–50 | Listening 改为 3 个部分（Q1–30） |
+| 2017–2024 | 12 | Q55–66 | Q31–54 | Part II 减为 12 题 |
+| 2025 | **10** | Q46–55 | Q26–45 | Reading 部分 45 分钟 |
 
-→ 题数一直在减少（20 → 12 → 10），**每一题的分量变大**。2027 年大概率延续 2025 年的格式（10 题左右），但不能排除再次调整。
+→ 2004–2016 的 13 年间 Part II 一直是**一篇短文 20 个空**，形式基本没变（只是题号随 Listening 题数前移）。2017 年起减到 12 题，2025 年再减到 10 题。
+→ Part I 在所有年份都是 2–3 篇长文 × 约 20 题；其中"下划线词义 / 指代"类每年 2–7 题，本题库只收这一类（内容理解题不收）。
 
 ## 2. Part II（短文填空 4 选 1）分类统计
 
 | 年 | 题数 | 词汇 vocab | 搭配/介词 | 语法用法(语法・词性) | 连接词/衔接 | 动词形式 | 关系从句 | 其他 |
 |---|---|---|---|---|---|---|---|---|
+| 2004 | 20 | 6 | 6 | 4 | 2 | 2 | 0 | 0 |
+| 2005 | 20 | 5 | 6 | 2 | 5 | 1 | 1 | 0 |
+| 2006 | 20 | 4 | 3 | 7 | 2 | 3 | 1 | 0 |
+| 2007 | 20 | 4 | 4 | 9 | 1 | 2 | 0 | 0 |
+| 2008 | 20 | 5 | 3 | 6 | 3 | 3 | 0 | 0 |
+| 2009 | 20 | 8 | 6 | 1 | 3 | 1 | 1 | 0 |
+| 2010 | 20 | 3 | 9 | 3 | 3 | 2 | 0 | 0 |
+| 2011 | 20 | 5 | 7 | 4 | 3 | 1 | 0 | 0 |
+| 2012 | 20 | 6 | 6 | 3 | 1 | 3 | 1 | 0 |
+| 2013 | 20 | 2 | 6 | 7 | 2 | 2 | 1 | 0 |
 | 2014 | 20 | 6 | 3 | 4 | 3 | 2 | 1 | 1 |
 | 2015 | 20 | 8 | 5 | 3 | 4 | 0 | 0 | 0 |
 | 2016 | 20 | 4 | 7 | 3 | 2 | 4 | 0 | 0 |
@@ -29,16 +42,26 @@
 | 2023 | 12 | 6 | 0 | 2 | 2 | 2 | 0 | 0 |
 | 2024 | 12 | 5 | 2 | 2 | 2 | 1 | 0 | 0 |
 | 2025 | 10 | 3 | 4 | 1 | 1 | 1 | 0 | 0 |
-| **合计** | **166** | **64 (39%)** | **31 (19%)** | **25 (15%)** | **25 (15%)** | **17 (10%)** | **2** | **2** |
+| **合计** | **366** | **112 (30%)** | **87 (23%)** | **71 (19%)** | **50 (13%)** | **37 (10%)** | **7 (1%)** | **2** |
 
-最近 5 年（2021–2025，58 题）：词汇 23、连接词 10、动词形式 9、语法用法 8、搭配/介词 7、其他 1。
+2004–2013（200 题）：搭配/介词 56、词汇 48、语法用法 46、连接词 25、动词形式 20、关系从句 5。
 
-**结论：** 词汇题一直是最多的（约 4 成）。剩下的是"连接词 + 动词形式 + 搭配/介词 + 语法用法"，大约各占 1–2 成。2025 年搭配/介词题有 4 题（unique **to** / **for the sake of** / **richly** decorated / **through**），比往年多。
+**变化：** 2004–2013 的旧题比 2014 年以后**更偏语法**——搭配/介词、词性/用法（同词根选词性、比较级、冠词、代词、倒装 Only… have we 等）明显更多，纯词汇题较少。2017 年以后题数减少，**词汇题比例上升到 4–5 成**。连接词/衔接每年 1–5 题，22 年间一年也没缺过。
 
 ## 3. Part I（阅读理解中的词汇・语法相关题）
 
-| 年 | 题数 | 词义（同义替换） | 指代 (this ~) | 语篇衔接（插入句/段落结论） |
+| 年 | 题数 | 词义（同义替换） | 指代 (this ~ / it / they) | 语篇衔接（插入句/段落结论） |
 |---|---|---|---|---|
+| 2004 | 4 | 4 | 0 | 0 |
+| 2005 | 5 | 3 | 2 | 0 |
+| 2006 | 4 | 2 | 2 | 0 |
+| 2007 | 4 | 2 | 2 | 0 |
+| 2008 | 5 | 2 | 3 | 0 |
+| 2009 | 6 | 5 | 1 | 0 |
+| 2010 | 4 | 4 | 0 | 0 |
+| 2011 | 4 | 4 | 0 | 0 |
+| 2012 | 7 | 6 | 1 | 0 |
+| 2013 | 2 | 1 | 1 | 0 |
 | 2014 | 4 | 4 | 0 | 0 |
 | 2015 | 4 | 4 | 0 | 0 |
 | 2016 | 6 | 5 | 1 | 0 |
@@ -51,43 +74,21 @@
 | 2023 | 5 | 3 | 1 | 1 |
 | 2024 | 4 | 3 | 0 | 1 |
 | 2025 | 2 | 2 | 0 | 0 |
-| **合计** | **41** | **33** | **5** | **3** |
+| **合计** | **86** | **66** | **17** | **3** |
 
-主要形式是 **"下划线单词最接近的意思是？"**。考过的词有：outweigh, unfeasible, induce, discredit, regressive, viable, covert, embedded in, refute, debunk, tenets, elusive, periodicity, at variance with, generic, consternation, detrimental, ratification, pernicious, potent, quantitative, ubiquitous, precedent, plausible, assign。
-→ 这些都是 **英検準1級〜1級** 的学术词，而且一般**可以用上下文推测**（题目的设计就是这样）。
+2004–2013 考过的词/短语：indifference to, innately, orchestrates, flaw, accrual, blank slate, dogma, neighbors, reach, disparities / injustice, integrity / incompatible, paradoxically, bedrock, spectacularly, deeply flawed, scientific reductionism, parking-lot science, stems, hot-headed, underscored, common, innate, undertaking, repository of information, advocates, disdains, violate, explicitly, execute, skip, marriage of hand and mind, potent。
+→ 旧题里**指代题更多**（2006–2008 每年 2–3 题：it / they / this shift / the puzzle / one），2009 年以后以"下划线词义"为主。还有比喻短语的意思（blank slate、parking-lot science、marriage of hand and mind），2014 年以后较少见。
 
-## 4. 反复出现的考点（计数）
+## 4. 补充：2004–2013 中反复出现的考点
 
-1. **让步：despite（介词）vs though / although / while（连词）** — 共 6 题
-   - 答案是 Despite/despite：2015-P2-09、2016-P2-15、2019-P2-10
-   - 答案是让步的 while / While：2015-P2-07、2017-P2-11（despite 是干扰项）、2022-P2-05
-   - 另外 in spite of 作为干扰项出现：2023-P2-03、2025-P2-05
-   - 规则：后面接**名词/动名词** → despite / in spite of；接**主谓完整的句子** → though / although / while。
-2. **result in / result from（因果方向）** — 3 题：2014-P2-13 (results in)、2019-P2-12 (resulting in vs resulting from)、2023-P2-04 (resulting in vs causing / owing to / because of)
-   - A result in B = A 导致 B；B result from A = B 由 A 引起。
-3. **Upon + 名词 / doing（"一…就…"）** — 2 题：2016-P2-06、2017-P2-06
-4. **A + 介词 + B 的固定搭配**（形容词/动词/名词 + 介词）：unique **to**、effective **in**、wary（**of**）、cope **with**、refrain **from**、contribute **to**、come **from**、in exchange **for**、for the sake **of**、on attracting、in terms **of**、due **to**……搭配/介词类共 31 题。
-5. **段落之间的衔接副词**（However / In contrast / As a result / In other words / For instance / Accordingly / Undoubtedly / More importantly / In reality …）— 连接词类共 25 题，**每年 1–4 题，一年也没缺过**。
-6. **词性/派生词选择**（同一词根选正确词性）：conscious / conscience / consciously（2014）、personal / personality / personnel（2014）、living / alive（2015）、unnoticed / unnoticeable（2015）、dissatisfied / dissatisfactory / dissatisfying（2019）— 5 题。
-7. **形近词**：remain / retain / repeal / relocate（2025）、refrain / restrain / restrict / retain（2020）、benefactor / beneficiary / recipient（2017）、legislation / legalisation（2023）、species / specifications / specialisations（2022）— 选项"长得像"是常见的出题方法。
-8. **动词形式**（时态・被动・分词・不定式）— 17 题。例如：Constructed（过去分词句首，2025）、being declared（2023）、are produced（主谓一致 + 被动，2022）、has gained（现在完成，2016）、to open / to learn（不定式）。
+- **衔接副词/连词**（25 题）：Likewise（2004）、however（2005，插入句中）、in fact（2006, 2013）、Furthermore（2007）、Certainly / As（2008）、Moreover / Whatever（2010）、At present（2011）、Even though（2012）——与新题相同，先判断前后两句的关系。
+- **词性/派生词**：brilliant / brilliantly / brilliance / brilliancy（2006）、consume / consuming / consumption（2006）等——"同一词根选正确词性"在旧题中几乎每年都有。
+- **强调句与倒装**：it was only with the introduction…（2006）、It was not until 1750-1800 that…（2007）、Only in our time have we…（2011）。
+- **动词 + 介词**：improve upon（2007）等搭配题在旧题中特别多（搭配/介词 56 题）。
+- 让步 despite / although / while 在旧题中**只作为干扰项出现**，没有做正确答案；result in/from 在旧题中没有出现。
 
-## 5. 对 2027 年的预测（根据上面的数字）
+## 5. 对练习的影响
 
-- Part II 大概 **10 题**左右，其中**词汇 3–5 题、搭配/介词 2–4 题、连接词 1–2 题、动词形式 1–2 题、词性/用法 1 题**。
-- Part I 每年 2–6 题会考"下划线词义"，可能还有 1 题指代或插入句。
-- 让步（despite/although/while）与因果（result in/from、owing to、due to）几乎是"必考级"的老考点，至少会以干扰项的形式出现。
-- 文章是学术类（心理学、语言学、历史、生物、社会），**词汇以英検準1級为主**。
-
-## 6. 优先练习清单（从上到下按优先级）
-
-1. ★★★ **学术词汇（英検準1級〜1級）**：用 `glosses.json` 和 Part I 的考过的词复习；练"用上下文猜词义"。（词汇 64 + Part I 33 题）
-2. ★★★ **介词搭配**：形容词/动词 + 介词（unique to, effective in, cope with, refrain from, contribute to, result in/from, due to, in terms of, for the sake of, in exchange for）。（31 题）
-3. ★★★ **衔接副词的逻辑**：However / In contrast / As a result / Therefore / In other words / For instance / Accordingly / Nevertheless / Moreover —— 先判断前后两句的关系是"转折 / 因果 / 换句话说 / 举例 / 补充"。（25 题）
-4. ★★ **despite vs although/while**：看后面接的是名词还是句子。（6 题）
-5. ★★ **动词形式**：分词句首（Constructed…, Having done…）、被动、现在完成、不定式 vs 动名词。（17 题）
-6. ★★ **词性/派生词**：-ous / -ness / -ly / -ity / -ed vs -ing 形容词（dissatisfied vs dissatisfying）。（5 题 + 用法类）
-7. ★ **形近词辨析**：retain/remain、refrain/restrain、benefactor/beneficiary、legislation/legalisation。
-8. ★ **关系从句**（which / what / where）：只有 2 题，但出了就是送分题。
-
-练习方法：先做"随机模式"把 166 + 41 题全部做一遍 → 只复习做错的 category → 考前一个月按年份（2025、2024、2023…）计时做完整的一年。
+- 旧题 200 题最适合练 **搭配/介词 和 词性/用法**（共 100 题以上），这是 2014 年以后题量少、练习不够的部分。
+- 旧题的文章较长、句子更复杂（20 个空在同一篇文章），适合做"整篇限时"练习。
+- 注意：2004–2013 的答案是自己推出来的，其中 17 题标为 `confidence: medium`，练习时以解析为准，不要死记答案。
