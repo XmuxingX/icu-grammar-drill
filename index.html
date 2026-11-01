@@ -59,6 +59,7 @@ u.tg{text-decoration-thickness:2px;text-underline-offset:3px;font-weight:600}
 .fb .res{font-weight:700;font-size:17px}
 .fb.ok .res{color:var(--ok)}.fb.ng .res{color:var(--ng)}
 .exp{margin:6px 0 4px;font-size:15px}
+.est{font-size:12px;color:var(--mut);margin:0 0 4px}
 .prog{font-size:14px;color:var(--mut);display:flex;justify-content:space-between;align-items:center;min-height:44px}
 .bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:4px}
 .bar>i{display:block;height:100%;background:var(--acc)}
@@ -254,6 +255,11 @@ window.addEventListener('resize',hidePop);
 
 // ---- 表示ラベル ----
 const srcLabel=q=>q.year+'年 Part '+q.part+' 第'+q.exam_q+'問';
+// 公式解答のない年（answer_source: "derived"）の推定解答の注記。answer_source のない問題は何も表示しない
+function estNote(q){
+  if(q.answer_source!=='derived')return'';
+  return'<div class="est" lang="ja">※公式解答なし・推定解答'+(q.confidence==='medium'?'（確度やや低め）':'')+'</div>';
+}
 function badges(q){
   let b=q.source==='key'?'<span class="tag off">公式解答</span>':'<span class="tag">自己解答</span>';
   if(q.confidence==='medium')b+='<span class="tag warn">答えに自信度低め</span>';
@@ -287,7 +293,7 @@ function qCard(q,opts={}){
     el.querySelector('.act').remove();
     const a=el.querySelector('.after');
     a.innerHTML='<div class="fb '+(ok?'ok':'ng')+'"><div class="res">'+(ok?'○ 正解':'× 不正解')+'　<span style="font-weight:400;font-size:15px">正解: '+q.answer+') '+wz(q.choices[q.answer])+'</span></div>'+
-      '<div class="exp" lang="zh-Hans">'+wz(q.explanation_zh)+'</div><div class="meta" style="margin:4px 0 0">'+badges(q)+'</div></div>'+
+      '<div class="exp" lang="zh-Hans">'+wz(q.explanation_zh)+'</div>'+estNote(q)+'<div class="meta" style="margin:4px 0 0">'+badges(q)+'</div></div>'+
       (opts.next?'<button class="btn pri full nx">'+esc(opts.next.label)+'</button>':'');
     if(opts.next)a.querySelector('.nx').addEventListener('click',opts.next.fn);
     opts.onAnswer&&opts.onAnswer(ok,sel);
@@ -332,6 +338,9 @@ function home(){
   const seg=(name,items)=>'<div class="seg" data-f="'+name+'">'+items.map(([v,l])=>'<button data-v="'+v+'" class="'+(String(F[name])===String(v)?'on':'')+'">'+esc(l)+'</button>').join('')+'</div>';
   const best={};S.runs.forEach(r=>{if(!best[r.y]||r.sc/r.t>best[r.y].sc/best[r.y].t)best[r.y]=r});
   const years=Object.keys(PAS).sort((a,b)=>b-a);
+  const ys=BANK.map(q=>q.year),y0=Math.min(...ys),y1=Math.max(...ys);
+  const keyYs=[...new Set(BANK.filter(q=>q.source==='key').map(q=>q.year))].sort();
+  const estYs=BANK.filter(q=>q.answer_source==='derived').map(q=>q.year);
   app.innerHTML=
   '<div class="card"><h2>ランダム</h2>'+
    '<div class="lbl">範囲</div>'+seg('part',[['all','全問'],['II','Part II 空所補充'],['I','Part I 語彙']])+
@@ -343,7 +352,7 @@ function home(){
   '<div class="card"><h2>苦手復習</h2>'+(wl.length?'<div class="note">間違えたことのある問題: '+wl.length+'問（間違いの多い順）</div><div class="row" style="margin-top:8px"><button class="btn pri" id="goW10">10問</button><button class="btn" id="goWA">全部（'+wl.length+'問）</button></div>':'<div class="note">まだ間違えた問題はありません。</div>')+'</div>'+
   '<div class="card"><h2>年度別全文</h2><div class="note">1年分の Part II 全文を空欄の順に解きます（同年の Part I 語彙問題つき）。</div><div class="yr" style="margin-top:8px">'+
    years.map(y=>{const p=PAS[y],b=best[y];return'<button data-y="'+y+'">'+y+'<small>'+(p.items.length+p.part1_items.length)+'問'+(b?' · 最高 '+b.sc+'/'+b.t:'')+'</small></button>'}).join('')+'</div></div>'+
-  '<p class="note center">全'+BANK.length+'問（2014–2025）。2025年以外の解答は自己解答で、公式解答ではありません。<br>記録はこの端末（ブラウザ）内にだけ保存されます。</p>';
+  '<p class="note center">全'+BANK.length+'問（'+y0+'–'+y1+'）。'+(keyYs.length?keyYs.join('・')+'年以外の':'')+'解答は自己解答で、公式解答ではありません'+(estYs.length?'（'+Math.min(...estYs)+'–'+Math.max(...estYs)+'年は公式解答のない推定解答）':'')+'。<br>記録はこの端末（ブラウザ）内にだけ保存されます。</p>';
   const upd=()=>{const pool=filt();$('#poolN').textContent='対象: '+pool.length+'問';$('#goR').disabled=!pool.length};
   app.querySelectorAll('.seg').forEach(s=>s.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const f=s.dataset.f;F[f]=f==='n'?+b.dataset.v:b.dataset.v;s.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));upd()}));
   upd();
