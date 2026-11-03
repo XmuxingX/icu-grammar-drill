@@ -147,13 +147,25 @@ function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random
 // q: {id:{n:回答数,c:正解数,m:ミス数,s:連続正解,l:最終回答時刻,lw:最終ミス時刻,due:復習予定時刻}}
 // runs: 年度別全文の記録 [{y,d,sc,t,sec}]  days: {日付:[回答数,正解数]}
 let S;
-function load(){try{S=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){S={}}S.v=1;S.q=S.q||{};S.runs=S.runs||[];S.days=S.days||{}}
+// S.v: 記録の形式バージョン（S.q の外にあるので問題の記録としては数えられない）。2 = 復習間隔の移行済み
+function load(){try{S=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){S={}}S.q=S.q||{};S.runs=S.runs||[];S.days=S.days||{};
+  if(!(S.v>=2))migrate2();}
+// 1回だけの移行: 復習間隔を延ばした（誤答3日後・正答7日後〜）ので既存の復習予定を後ろへずらす。
+// 記録は消さない。n/c/m/s/l/lw は変えず、due は遅くなる方向にだけ動かす。
+function migrate2(){
+  for(const id in S.q){const r=S.q[id];if(!r||typeof r!=='object'||!(r.m>0))continue;
+    let t=null;
+    if(r.s===0){const b=r.lw||r.l;if(b)t=b+3*DAY}
+    else if(r.s>=1&&r.l)t=r.l+7*DAY;
+    if(t!=null&&!(r.due>=t))r.due=t}
+  S.v=2;if(localStorage.getItem(KEY)!=null)save();
+}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function record(id,ok){
   const r=S.q[id]||(S.q[id]={n:0,c:0,m:0,s:0});const now=Date.now();
   r.n++;r.l=now;
-  if(ok){r.c++;r.s++;if(r.m>0){const iv=[1,3,7,14,30][Math.min(r.s,4)];r.due=now+iv*DAY}}
-  else{r.m++;r.s=0;r.lw=now;r.due=now+DAY}
+  if(ok){r.c++;r.s++;if(r.m>0){const iv=[7,7,14,30,30][Math.min(r.s,4)];r.due=now+iv*DAY}}
+  else{r.m++;r.s=0;r.lw=now;r.due=now+3*DAY}
   const d=today();const t=S.days[d]||(S.days[d]=[0,0]);t[0]++;if(ok)t[1]++;
   save();
 }
@@ -316,7 +328,10 @@ function pick(pool,count){
   const out=due.slice(0,Math.ceil(count*0.6));
   const used=new Set(out.map(q=>q.id));
   const cr=catRates();
-  const rest=pool.filter(q=>!used.has(q.id)).map(q=>{
+  // 直近3日に回答した問題は除外（残りが足りないときだけ従来どおりの重みで全体から選ぶ）
+  const cand=pool.filter(q=>!used.has(q.id));
+  const fresh=cand.filter(q=>{const r=S.q[q.id];return!r||!r.l||now-r.l>=3*DAY});
+  const rest=(out.length+fresh.length>=count?fresh:cand).map(q=>{
     const r=S.q[q.id],c=cr[q.category];
     const er=c&&c.n>=3?1-c.c/c.n:0.3;
     let w=1+3*er;
@@ -354,7 +369,7 @@ function home(){
    '<div class="lbl">問題数</div>'+seg('n',[[5,'5問'],[10,'10問']])+
    '<div class="note" id="poolN"></div>'+
    '<button class="btn pri full" id="goR" style="margin-top:8px">スタート</button>'+
-   '<div class="note" style="margin-top:6px">間違えた問題（1日後から）と苦手カテゴリを優先して出題します。'+(dueN?'今日の復習対象: '+dueN+'問':'')+'</div></div>'+
+   '<div class="note" style="margin-top:6px">間違えた問題（3日後から）と苦手カテゴリを優先して出題します。'+(dueN?'今日の復習対象: '+dueN+'問':'')+'</div></div>'+
   '<div class="card"><h2>苦手復習</h2>'+(wl.length?'<div class="note">間違えたことのある問題: '+wl.length+'問（間違いの多い順）</div><div class="row" style="margin-top:8px"><button class="btn pri" id="goW10">10問</button><button class="btn" id="goWA">全部（'+wl.length+'問）</button></div>':'<div class="note">まだ間違えた問題はありません。</div>')+'</div>'+
   '<div class="card"><h2>年度別全文</h2><div class="note">1年分の Part II 全文を空欄の順に解きます（同年の Part I 語彙問題つき）。</div><div class="yr" style="margin-top:8px">'+
    years.map(y=>{const p=PAS[y],b=best[y];return'<button data-y="'+y+'">'+y+'<small>'+(p.items.length+p.part1_items.length)+'問'+(b?' · 最高 '+b.sc+'/'+b.t:'')+'</small></button>'}).join('')+'</div></div>'+
