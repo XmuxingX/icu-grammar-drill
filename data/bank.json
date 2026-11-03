@@ -201,7 +201,7 @@
   "id": "2025-P2-10",
   "year": 2025,
   "exam_q": 55,
-  "context": null,
+  "context": "The St. Charles Bridge, St. Nicholas Church, and the House of the Black Madonna are just three of many examples of outstanding pieces of architecture that can be seen in this historical city.",
   "sentence": "( ___ ) these beautiful buildings is vital so that future generations may study and enjoy the history and culture of Prague.",
   "choices": {
    "a": "Decoration of",
@@ -561,7 +561,7 @@
   "part": "I",
   "stem": "Which of the following is the most appropriate fit for [ Question 37 ] in paragraph 6?",
   "target": null,
-  "context": "The interviews revealed how Indigenous perceptions of threats are localized and context-dependent, indicating that a one-size-fits-all solution is unlikely. This nuanced understanding of perceived threats would not have been possible without hearing directly from the Indigenous community members themselves. (第5段末)",
+  "context": "One example of these efforts can be found in research being conducted among Indigenous communities along coastal areas of British Columbia in western Canada. In these regions, Pacific salmon have been in a state of decline, to the point where many salmon populations are categorized as endangered. … The interviews revealed how Indigenous perceptions of threats are localized and context-dependent, indicating that a one-size-fits-all solution is unlikely. This nuanced understanding of perceived threats would not have been possible without hearing directly from the Indigenous community members themselves. (第5段末)",
   "sentence": "( ___ ), researchers should continue to be inclusive of Indigenous perspectives while working toward sustainable futures. In some instances, however, tensions can arise.",
   "choices": {
    "a": "To confirm the complexity of collaborative TEK research",
@@ -782,7 +782,8 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2023.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "Between 1961 and 1995, a number of laws were passed that {{62|restricted}} what could be released into the river."
  },
  {
   "id": "2023-P2-08",
@@ -872,7 +873,7 @@
   "id": "2023-P2-12",
   "year": 2023,
   "exam_q": 66,
-  "context": null,
+  "context": "The aforementioned improvements in the water quality of the Thames demonstrate that it is possible to fix some of the harm that people cause to the natural environment.",
   "sentence": "However, it must be recognised that if we continue to mistreat the world around us, we may well cause damage which is ( ___ ).",
   "choices": {
    "a": "impossible",
@@ -1211,7 +1212,8 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2022.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "However, when he washed the test tubes, he was astonished to notice a vivid purple colour {{64|left}} on the glass."
  },
  {
   "id": "2022-P2-10",
@@ -1274,7 +1276,8 @@
   "confidence": "medium",
   "tags": [],
   "doc": "ENG-2022.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "The global synthetic dye market is expected to grow from almost seventeen billion dollars in 2020 to over twenty-two billion in 2025."
  },
  {
   "id": "2022-P1-32",
@@ -1464,7 +1467,7 @@
   "id": "2021-P2-06",
   "year": 2021,
   "exam_q": 60,
-  "context": null,
+  "context": "\"Entitativity\" is a term coined by social psychologist Donald Campbell to describe the extent to which a group seems to be a single, unified entity—a real group. … {{59|For instance}}, to measure well-being, the participants were asked to what extent they agreed with the statement that doing the activity helps make them feel a lot happier afterwards.",
   "sentence": "One example for measuring ( ___ ) was to what extent members of the group share common goals.",
   "choices": {
    "a": "objectivity",
@@ -1721,13 +1724,14 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2020.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "The three variations are to consider others as benevolent, malevolent or neutral/mixed."
  },
  {
   "id": "2020-P2-04",
   "year": 2020,
   "exam_q": 58,
-  "context": null,
+  "context": "The three variations are to consider others as benevolent, malevolent or neutral/mixed.",
   "sentence": "For instance, in a particular culture with the first variation, people may be more likely to go out without locking their doors because they consider others to be ( ___ ) trustworthy.",
   "choices": {
    "a": "fundamentally",
@@ -1790,7 +1794,7 @@
   "id": "2020-P2-07",
   "year": 2020,
   "exam_q": 61,
-  "context": null,
+  "context": "Another value orientation is the relationship of people to nature: whether people worship, live in harmony with or seek to control it. The first variation might be observed in a culture where people accept that they are {{60|at}} the mercy of natural forces.",
   "sentence": "Japanese architecture allowing the wind to flow through rooms and Japanese people enjoying the sound of wind-bells to ( ___ ) the summer heat may be examples of the second variation.",
   "choices": {
    "a": "conquer",
@@ -1875,7 +1879,7 @@
   "year": 2020,
   "exam_q": 65,
   "context": "Furthermore, the Value Orientations Theory can help people analyse their own cultural values, too.",
-  "sentence": "( ___ ), it is important to remember there are also some differences among individuals within the same culture and that people’s cultural values may differ, influenced by various (66), such as their moods on that day and their interlocutors.",
+  "sentence": "( ___ ), it is important to remember there are also some differences among individuals within the same culture and that people’s cultural values may differ, influenced by various {{66|factors}}, such as their moods on that day and their interlocutors.",
   "choices": {
    "a": "However",
    "b": "In conclusion",
@@ -1896,7 +1900,7 @@
   "year": 2020,
   "exam_q": 66,
   "context": null,
-  "sentence": "(65), it is important to remember there are also some differences among individuals within the same culture and that people’s cultural values may differ, influenced by various ( ___ ), such as their moods on that day and their interlocutors.",
+  "sentence": "{{65|However}}, it is important to remember there are also some differences among individuals within the same culture and that people’s cultural values may differ, influenced by various ( ___ ), such as their moods on that day and their interlocutors.",
   "choices": {
    "a": "behaviours",
    "b": "contexts",
@@ -2321,7 +2325,8 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2018.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "He noticed that although younger students sounded fluent, older Swedish children {{56|appeared}} to be better at acquiring the English needed for learning school subjects."
  },
  {
   "id": "2018-P2-02",
@@ -2369,7 +2374,7 @@
   "id": "2018-P2-04",
   "year": 2018,
   "exam_q": 58,
-  "context": null,
+  "context": "These social interactions are context embedded; however, the skills demanded in these situations are not specialized nor cognitively demanding. …",
   "sentence": "This learning is less context ( ___ ), and typically presented in academic settings.",
   "choices": {
    "a": "dependent",
@@ -2390,7 +2395,7 @@
   "id": "2018-P2-05",
   "year": 2018,
   "exam_q": 59,
-  "context": null,
+  "context": "These social interactions are context embedded; however, the skills demanded in these situations are not specialized nor cognitively demanding. …",
   "sentence": "CALP is more challenging to develop than BICS because the language and concepts become more ( ___ ) demanding in higher grades.",
   "choices": {
    "a": "affectively",
@@ -2447,7 +2452,8 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2018.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "Most students became fluent in BICS in English within two years of their arrival, whereas it took much longer, between five and seven years, for bilingual students to approach normal levels of CALP."
  },
  {
   "id": "2018-P2-08",
@@ -2495,7 +2501,7 @@
   "id": "2018-P2-10",
   "year": 2018,
   "exam_q": 64,
-  "context": null,
+  "context": "During this period, bilingual students were rushed through English as a second language or bilingual programs into {{63|mainstream}} academic programs, since educators mistakenly believed that language learners with proficient BICS levels had reached full mastery of the English language.",
   "sentence": "( ___ ), many of the bilingual students did not receive sufficient support to help them understand instruction and continue to develop their English academic skills.",
   "choices": {
    "a": "All the same",
@@ -2680,7 +2686,7 @@
   "year": 2017,
   "exam_q": 57,
   "context": null,
-  "sentence": "At the end of the war, after the ( ___ ) of Berlin, Hilberg was chosen, as a native speaker of German, to translate thousands of Nazi documents on the (58) of the Jewish people.",
+  "sentence": "At the end of the war, after the ( ___ ) of Berlin, Hilberg was chosen, as a native speaker of German, to translate thousands of Nazi documents on the {{58|extermination}} of the Jewish people.",
   "choices": {
    "a": "Closure",
    "b": "Defense",
@@ -2701,7 +2707,7 @@
   "year": 2017,
   "exam_q": 58,
   "context": null,
-  "sentence": "At the end of the war, after the (57) of Berlin, Hilberg was chosen, as a native speaker of German, to translate thousands of Nazi documents on the ( ___ ) of the Jewish people.",
+  "sentence": "At the end of the war, after the {{57|Fall}} of Berlin, Hilberg was chosen, as a native speaker of German, to translate thousands of Nazi documents on the ( ___ ) of the Jewish people.",
   "choices": {
    "a": "depression",
    "b": "exclusion",
@@ -2715,7 +2721,8 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2017.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "This experience {{59|sparked}} Hilberg's interest in studying the mechanisms of the genocide."
  },
  {
   "id": "2017-P2-05",
@@ -2972,7 +2979,7 @@
   "year": 2016,
   "exam_q": 51,
   "context": null,
-  "sentence": "Dr. Hawa Abdi, the first female gynecologist in the North African country of Somalia, ( ___ ) international recognition in recent years (52) her bravery under extreme duress.",
+  "sentence": "Dr. Hawa Abdi, the first female gynecologist in the North African country of Somalia, ( ___ ) international recognition in recent years {{52|due to}} her bravery under extreme duress.",
   "choices": {
    "a": "gains",
    "b": "had gained",
@@ -2993,7 +3000,7 @@
   "year": 2016,
   "exam_q": 52,
   "context": null,
-  "sentence": "Dr. Hawa Abdi, the first female gynecologist in the North African country of Somalia, (51) international recognition in recent years ( ___ ) her bravery under extreme duress.",
+  "sentence": "Dr. Hawa Abdi, the first female gynecologist in the North African country of Somalia, {{51|has gained}} international recognition in recent years ( ___ ) her bravery under extreme duress.",
   "choices": {
    "a": "due to",
    "b": "in addition to",
@@ -3077,7 +3084,7 @@
   "year": 2016,
   "exam_q": 56,
   "context": null,
-  "sentence": "( ___ ) graduation from high school, Abdi majored in gynecology in the former Soviet Union and returned home in 1983 (57) a one-room women’s clinic on her family farm outside Mogadishu.",
+  "sentence": "( ___ ) graduation from high school, Abdi majored in gynecology in the former Soviet Union and returned home in 1983 {{57|to open}} a one-room women’s clinic on her family farm outside Mogadishu.",
   "choices": {
    "a": "Afterward",
    "b": "Alongside",
@@ -3100,7 +3107,7 @@
   "year": 2016,
   "exam_q": 57,
   "context": null,
-  "sentence": "(56) graduation from high school, Abdi majored in gynecology in the former Soviet Union and returned home in 1983 ( ___ ) a one-room women’s clinic on her family farm outside Mogadishu.",
+  "sentence": "{{56|Upon}} graduation from high school, Abdi majored in gynecology in the former Soviet Union and returned home in 1983 ( ___ ) a one-room women’s clinic on her family farm outside Mogadishu.",
   "choices": {
    "a": "and open",
    "b": "open",
@@ -3163,7 +3170,7 @@
   "year": 2016,
   "exam_q": 60,
   "context": null,
-  "sentence": "Instead of fleeing, she remained in a ( ___ ) situation and she resourcefully secured funding from numerous NGOs and transformed her family farm into a refugee camp (61) nearly 100,000 people.",
+  "sentence": "Instead of fleeing, she remained in a ( ___ ) situation and she resourcefully secured funding from numerous NGOs and transformed her family farm into a refugee camp {{61|supporting}} nearly 100,000 people.",
   "choices": {
    "a": "compromising",
    "b": "distinct",
@@ -3184,7 +3191,7 @@
   "year": 2016,
   "exam_q": 61,
   "context": null,
-  "sentence": "Instead of fleeing, she remained in a (60) situation and she resourcefully secured funding from numerous NGOs and transformed her family farm into a refugee camp ( ___ ) nearly 100,000 people.",
+  "sentence": "Instead of fleeing, she remained in a {{60|perilous}} situation and she resourcefully secured funding from numerous NGOs and transformed her family farm into a refugee camp ( ___ ) nearly 100,000 people.",
   "choices": {
    "a": "support with",
    "b": "supported",
@@ -3312,7 +3319,7 @@
   "year": 2016,
   "exam_q": 67,
   "context": null,
-  "sentence": "Within weeks, Abdi, with the support of her staunch ( ___ ) and the international news media, (68) the pirates from the camp and forced them to make a public (69) to her.",
+  "sentence": "Within weeks, Abdi, with the support of her staunch ( ___ ) and the international news media, {{68|ousted}} the pirates from the camp and forced them to make a public {{69|apology}} to her.",
   "choices": {
    "a": "allies",
    "b": "observers",
@@ -3333,7 +3340,7 @@
   "year": 2016,
   "exam_q": 68,
   "context": null,
-  "sentence": "Within weeks, Abdi, with the support of her staunch (67) and the international news media, ( ___ ) the pirates from the camp and forced them to make a public (69) to her.",
+  "sentence": "Within weeks, Abdi, with the support of her staunch {{67|allies}} and the international news media, ( ___ ) the pirates from the camp and forced them to make a public {{69|apology}} to her.",
   "choices": {
    "a": "alienated",
    "b": "disarmed",
@@ -3354,7 +3361,7 @@
   "year": 2016,
   "exam_q": 69,
   "context": null,
-  "sentence": "Within weeks, Abdi, with the support of her staunch (67) and the international news media, (68) the pirates from the camp and forced them to make a public ( ___ ) to her.",
+  "sentence": "Within weeks, Abdi, with the support of her staunch {{67|allies}} and the international news media, {{68|ousted}} the pirates from the camp and forced them to make a public ( ___ ) to her.",
   "choices": {
    "a": "apology",
    "b": "appeal",
@@ -3596,7 +3603,7 @@
   "year": 2015,
   "exam_q": 53,
   "context": "One such image that obviously comes from vampire films is that they are bloodthirsty creatures.",
-  "sentence": "( ___ ), among the 1,200 species of bats, only three survive exclusively on a (54) of blood.",
+  "sentence": "( ___ ), among the 1,200 species of bats, only three survive exclusively on a {{54|diet}} of blood.",
   "choices": {
    "a": "In contrast",
    "b": "In reality",
@@ -3617,7 +3624,7 @@
   "year": 2015,
   "exam_q": 54,
   "context": null,
-  "sentence": "(53), among the 1,200 species of bats, only three survive exclusively on a ( ___ ) of blood.",
+  "sentence": "{{53|In reality}}, among the 1,200 species of bats, only three survive exclusively on a ( ___ ) of blood.",
   "choices": {
    "a": "diet",
    "b": "stain",
@@ -3724,7 +3731,7 @@
   "year": 2015,
   "exam_q": 59,
   "context": null,
-  "sentence": "( ___ ) the lack of understanding on the part of humans, bats and people have been living together for thousands of years, (60) under the same roof.",
+  "sentence": "( ___ ) the lack of understanding on the part of humans, bats and people have been living together for thousands of years, {{60|literally}} under the same roof.",
   "choices": {
    "a": "Besides",
    "b": "Despite",
@@ -3747,7 +3754,7 @@
   "year": 2015,
   "exam_q": 60,
   "context": null,
-  "sentence": "(59) the lack of understanding on the part of humans, bats and people have been living together for thousands of years, ( ___ ) under the same roof.",
+  "sentence": "{{59|Despite}} the lack of understanding on the part of humans, bats and people have been living together for thousands of years, ( ___ ) under the same roof.",
   "choices": {
    "a": "heartily",
    "b": "joyfully",
@@ -3768,7 +3775,7 @@
   "year": 2015,
   "exam_q": 61,
   "context": null,
-  "sentence": "Indeed, bats and humans have similar tastes in ( ___ ) conditions; they both like their shelter to be clean, comfortable, and (62).",
+  "sentence": "Indeed, bats and humans have similar tastes in ( ___ ) conditions; they both like their shelter to be clean, comfortable, and {{62|secure}}.",
   "choices": {
    "a": "alive",
    "b": "live",
@@ -3789,7 +3796,7 @@
   "year": 2015,
   "exam_q": 62,
   "context": null,
-  "sentence": "Indeed, bats and humans have similar tastes in (61) conditions; they both like their shelter to be clean, comfortable, and ( ___ ).",
+  "sentence": "Indeed, bats and humans have similar tastes in {{61|living}} conditions; they both like their shelter to be clean, comfortable, and ( ___ ).",
   "choices": {
    "a": "calm",
    "b": "isolated",
@@ -3810,7 +3817,7 @@
   "year": 2015,
   "exam_q": 63,
   "context": "So bats like to roost in buildings such as houses, barns, and churches.",
-  "sentence": "( ___ ) bats do not damage the structures or cause trouble for humans, their existence in houses can go (64) for years.",
+  "sentence": "( ___ ) bats do not damage the structures or cause trouble for humans, their existence in houses can go {{64|unnoticed}} for years.",
   "choices": {
    "a": "Since",
    "b": "So",
@@ -3831,7 +3838,7 @@
   "year": 2015,
   "exam_q": 64,
   "context": null,
-  "sentence": "(63) bats do not damage the structures or cause trouble for humans, their existence in houses can go ( ___ ) for years.",
+  "sentence": "{{63|Since}} bats do not damage the structures or cause trouble for humans, their existence in houses can go ( ___ ) for years.",
   "choices": {
    "a": "to notice",
    "b": "unnoticeable",
@@ -3852,7 +3859,7 @@
   "year": 2015,
   "exam_q": 65,
   "context": null,
-  "sentence": "Bats are ( ___ ) endangered animals, and many countries are making efforts to (66) them.",
+  "sentence": "Bats are ( ___ ) endangered animals, and many countries are making efforts to {{66|protect}} them.",
   "choices": {
    "a": "also",
    "b": "perhaps",
@@ -3873,7 +3880,7 @@
   "year": 2015,
   "exam_q": 66,
   "context": null,
-  "sentence": "Bats are (65) endangered animals, and many countries are making efforts to ( ___ ) them.",
+  "sentence": "Bats are {{65|also}} endangered animals, and many countries are making efforts to ( ___ ) them.",
   "choices": {
    "a": "activate",
    "b": "protect",
@@ -3887,7 +3894,8 @@
   "confidence": "high",
   "tags": [],
   "doc": "ENG-2015.pdf",
-  "part": "II"
+  "part": "II",
+  "context_after": "In the UK, for example, there are strict laws about damaging bat roosts."
  },
  {
   "id": "2015-P2-17",
@@ -3915,7 +3923,7 @@
   "year": 2015,
   "exam_q": 68,
   "context": "In addition, US organizations are encouraging people to build bat houses in their backyards.",
-  "sentence": "( ___ ) housing, the (69) will eat mosquitoes and other pests for humans, and offer their droppings as natural fertilizers.",
+  "sentence": "( ___ ) housing, the {{69|tenants}} will eat mosquitoes and other pests for humans, and offer their droppings as natural fertilizers.",
   "choices": {
    "a": "For the sake of",
    "b": "In exchange for",
@@ -3936,7 +3944,7 @@
   "year": 2015,
   "exam_q": 69,
   "context": null,
-  "sentence": "(68) housing, the ( ___ ) will eat mosquitoes and other pests for humans, and offer their droppings as natural fertilizers.",
+  "sentence": "{{68|In exchange for}} housing, the ( ___ ) will eat mosquitoes and other pests for humans, and offer their droppings as natural fertilizers.",
   "choices": {
    "a": "birds",
    "b": "companions",
@@ -4084,7 +4092,7 @@
   "year": 2014,
   "exam_q": 51,
   "context": null,
-  "sentence": "Many people argue that texting, or sending written messages through smartphones, is having a negative ( ___ ) on young people’s ability to write, particularly (52) grammar, punctuation and capital letters.",
+  "sentence": "Many people argue that texting, or sending written messages through smartphones, is having a negative ( ___ ) on young people’s ability to write, particularly {{52|in terms of}} grammar, punctuation and capital letters.",
   "choices": {
    "a": "consideration",
    "b": "decision",
@@ -4105,7 +4113,7 @@
   "year": 2014,
   "exam_q": 52,
   "context": null,
-  "sentence": "Many people argue that texting, or sending written messages through smartphones, is having a negative (51) on young people’s ability to write, particularly ( ___ ) grammar, punctuation and capital letters.",
+  "sentence": "Many people argue that texting, or sending written messages through smartphones, is having a negative {{51|effect}} on young people’s ability to write, particularly ( ___ ) grammar, punctuation and capital letters.",
   "choices": {
    "a": "as described by",
    "b": "as opposed to",
@@ -4167,7 +4175,7 @@
   "id": "2014-P2-05",
   "year": 2014,
   "exam_q": 55,
-  "context": null,
+  "context": "He argues that writing is usually a {{54|conscious}} process which encourages self-editing, and also requires a higher level of linguistic complexity.",
   "sentence": "Casual speech, ( ___ ), is a spontaneous act.",
   "choices": {
    "a": "despite that",
@@ -4209,7 +4217,7 @@
   "id": "2014-P2-07",
   "year": 2014,
   "exam_q": 57,
-  "context": null,
+  "context": "In addition, spoken exchanges are also brief; {{56|linguists}} have shown that we tend to speak in packages of seven to ten words.",
   "sentence": "Therefore, casual speech is more relaxed, more ( ___ ) and much less reflective than writing.",
   "choices": {
    "a": "complicated",
@@ -4231,7 +4239,7 @@
   "year": 2014,
   "exam_q": 58,
   "context": null,
-  "sentence": "Most significantly, it allows for the sender of ( ___ ) information to create messages quickly and for the receiver to have (59) access to them.",
+  "sentence": "Most significantly, it allows for the sender of ( ___ ) information to create messages quickly and for the receiver to have {{59|instant}} access to them.",
   "choices": {
    "a": "writer",
    "b": "writing",
@@ -4252,7 +4260,7 @@
   "year": 2014,
   "exam_q": 59,
   "context": null,
-  "sentence": "Most significantly, it allows for the sender of (58) information to create messages quickly and for the receiver to have ( ___ ) access to them.",
+  "sentence": "Most significantly, it allows for the sender of {{58|written}} information to create messages quickly and for the receiver to have ( ___ ) access to them.",
   "choices": {
    "a": "instant",
    "b": "legitimate",
@@ -4273,7 +4281,7 @@
   "year": 2014,
   "exam_q": 60,
   "context": null,
-  "sentence": "As a result, texting has ( ___ ) more like casual speech than (61).",
+  "sentence": "As a result, texting has ( ___ ) more like casual speech than {{61|formal writing}}.",
   "choices": {
    "a": "become",
    "b": "kept",
@@ -4293,8 +4301,8 @@
   "id": "2014-P2-11",
   "year": 2014,
   "exam_q": 61,
-  "context": null,
-  "sentence": "As a result, texting has (60) more like casual speech than ( ___ ).",
+  "context": "McWhorter argues that the introduction of the smartphone has changed the way we communicate, in particular, our written communication. Most significantly, it allows for the sender of {{58|written}} information to create messages quickly and for the receiver to have {{59|instant}} access to them.",
+  "sentence": "As a result, texting has {{60|become}} more like casual speech than ( ___ ).",
   "choices": {
    "a": "face-to-face communication",
    "b": "formal writing",
@@ -4336,7 +4344,7 @@
   "year": 2014,
   "exam_q": 63,
   "context": null,
-  "sentence": "A number of researchers have found that texting ( ___ ) feelings of regret among young people because they “speak” (64), without reflection, and share too much information.",
+  "sentence": "A number of researchers have found that texting ( ___ ) feelings of regret among young people because they “speak” {{64|too casually}}, without reflection, and share too much information.",
   "choices": {
    "a": "entitles",
    "b": "erases",
@@ -4357,7 +4365,7 @@
   "year": 2014,
   "exam_q": 64,
   "context": null,
-  "sentence": "A number of researchers have found that texting (63) feelings of regret among young people because they “speak” ( ___ ), without reflection, and share too much information.",
+  "sentence": "A number of researchers have found that texting {{63|results in}} feelings of regret among young people because they “speak” ( ___ ), without reflection, and share too much information.",
   "choices": {
    "a": "fairly well",
    "b": "less frequently",
@@ -4378,7 +4386,7 @@
   "year": 2014,
   "exam_q": 65,
   "context": null,
-  "sentence": "( ___ ), unlike real speech, these texts remain as a (66) record, (67) could be damaging to (68) relationships.",
+  "sentence": "( ___ ), unlike real speech, these texts remain as a {{66|permanent}} record, {{67|which}} could be damaging to {{68|personal}} relationships.",
   "choices": {
    "a": "In addition to",
    "b": "More importantly",
@@ -4399,7 +4407,7 @@
   "year": 2014,
   "exam_q": 66,
   "context": null,
-  "sentence": "(65), unlike real speech, these texts remain as a ( ___ ) record, (67) could be damaging to (68) relationships.",
+  "sentence": "{{65|More importantly}}, unlike real speech, these texts remain as a ( ___ ) record, {{67|which}} could be damaging to {{68|personal}} relationships.",
   "choices": {
    "a": "hidden",
    "b": "national",
@@ -4420,7 +4428,7 @@
   "year": 2014,
   "exam_q": 67,
   "context": null,
-  "sentence": "(65), unlike real speech, these texts remain as a (66) record, ( ___ ) could be damaging to (68) relationships.",
+  "sentence": "{{65|More importantly}}, unlike real speech, these texts remain as a {{66|permanent}} record, ( ___ ) could be damaging to {{68|personal}} relationships.",
   "choices": {
    "a": "what",
    "b": "when",
@@ -4441,7 +4449,7 @@
   "year": 2014,
   "exam_q": 68,
   "context": null,
-  "sentence": "(65), unlike real speech, these texts remain as a (66) record, (67) could be damaging to ( ___ ) relationships.",
+  "sentence": "{{65|More importantly}}, unlike real speech, these texts remain as a {{66|permanent}} record, {{67|which}} could be damaging to ( ___ ) relationships.",
   "choices": {
    "a": "personal",
    "b": "personality",
@@ -4462,7 +4470,7 @@
   "year": 2014,
   "exam_q": 69,
   "context": null,
-  "sentence": "However, there is still a lot ( ___ ) about the appropriate use of this tool in order to (70) unwanted consequences.",
+  "sentence": "However, there is still a lot ( ___ ) about the appropriate use of this tool in order to {{70|avoid}} unwanted consequences.",
   "choices": {
    "a": "as learned",
    "b": "for learners",
@@ -4483,7 +4491,7 @@
   "year": 2014,
   "exam_q": 70,
   "context": null,
-  "sentence": "However, there is still a lot (69) about the appropriate use of this tool in order to ( ___ ) unwanted consequences.",
+  "sentence": "However, there is still a lot {{69|to learn}} about the appropriate use of this tool in order to ( ___ ) unwanted consequences.",
   "choices": {
    "a": "avoid",
    "b": "ignore",
@@ -4609,7 +4617,7 @@
   "year": 2013,
   "exam_q": 51,
   "context": null,
-  "sentence": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes ( ___ ) because the Greek workmanship produced the (52) expression of that strong stability of support (53) is the main function of a column.",
+  "sentence": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes ( ___ ) because the Greek workmanship produced the {{52|ultimate}} expression of that strong stability of support {{53|which}} is the main function of a column.",
   "choices": {
    "a": "precise",
    "b": "precision",
@@ -4634,7 +4642,7 @@
   "year": 2013,
   "exam_q": 52,
   "context": null,
-  "sentence": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes (51) because the Greek workmanship produced the ( ___ ) expression of that strong stability of support (53) is the main function of a column.",
+  "sentence": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes {{51|precisely}} because the Greek workmanship produced the ( ___ ) expression of that strong stability of support {{53|which}} is the main function of a column.",
   "choices": {
    "a": "accidental",
    "b": "concluding",
@@ -4656,7 +4664,7 @@
   "year": 2013,
   "exam_q": 53,
   "context": null,
-  "sentence": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes (51) because the Greek workmanship produced the (52) expression of that strong stability of support ( ___ ) is the main function of a column.",
+  "sentence": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes {{51|precisely}} because the Greek workmanship produced the {{52|ultimate}} expression of that strong stability of support ( ___ ) is the main function of a column.",
   "choices": {
    "a": "such",
    "b": "there",
@@ -4680,7 +4688,7 @@
   "year": 2013,
   "exam_q": 54,
   "context": "And indeed the Doric columns in the Parthenon in Athens are more beautiful than the Egyptian columns in Thebes precisely because the Greek workmanship produced the ultimate expression of that strong stability of support which is the main function of a column.",
-  "sentence": "( ___ ) a strictly mathematical point of view, straight lines (55) literally served this purpose.",
+  "sentence": "( ___ ) a strictly mathematical point of view, straight lines {{55|would have}} literally served this purpose.",
   "choices": {
    "a": "From",
    "b": "How",
@@ -4704,7 +4712,7 @@
   "year": 2013,
   "exam_q": 55,
   "context": null,
-  "sentence": "(54) a strictly mathematical point of view, straight lines ( ___ ) literally served this purpose.",
+  "sentence": "{{54|From}} a strictly mathematical point of view, straight lines ( ___ ) literally served this purpose.",
   "choices": {
    "a": "will",
    "b": "will have",
@@ -4728,7 +4736,7 @@
   "year": 2013,
   "exam_q": 56,
   "context": null,
-  "sentence": "But the Greek architects knew ( ___ ) of perception to realize that when the eye views a perfectly straight vertical shaft, the message (57) to the brain is that the column is skinny and shrunken, (58) strong enough to hold up anything at all, just as a perfectly horizontal line conveys the (59) of sagging downward weakly in the middle.",
+  "sentence": "But the Greek architects knew ( ___ ) of perception to realize that when the eye views a perfectly straight vertical shaft, the message {{57|transmitted}} to the brain is that the column is skinny and shrunken, {{58|not}} strong enough to hold up anything at all, just as a perfectly horizontal line conveys the {{59|impression}} of sagging downward weakly in the middle.",
   "choices": {
    "a": "enough",
    "b": "exactly",
@@ -4752,7 +4760,7 @@
   "year": 2013,
   "exam_q": 57,
   "context": null,
-  "sentence": "But the Greek architects knew (56) of perception to realize that when the eye views a perfectly straight vertical shaft, the message ( ___ ) to the brain is that the column is skinny and shrunken, (58) strong enough to hold up anything at all, just as a perfectly horizontal line conveys the (59) of sagging downward weakly in the middle.",
+  "sentence": "But the Greek architects knew {{56|enough}} of perception to realize that when the eye views a perfectly straight vertical shaft, the message ( ___ ) to the brain is that the column is skinny and shrunken, {{58|not}} strong enough to hold up anything at all, just as a perfectly horizontal line conveys the {{59|impression}} of sagging downward weakly in the middle.",
   "choices": {
    "a": "is transmitting",
    "b": "transmit",
@@ -4776,7 +4784,7 @@
   "year": 2013,
   "exam_q": 58,
   "context": null,
-  "sentence": "But the Greek architects knew (56) of perception to realize that when the eye views a perfectly straight vertical shaft, the message (57) to the brain is that the column is skinny and shrunken, ( ___ ) strong enough to hold up anything at all, just as a perfectly horizontal line conveys the (59) of sagging downward weakly in the middle.",
+  "sentence": "But the Greek architects knew {{56|enough}} of perception to realize that when the eye views a perfectly straight vertical shaft, the message {{57|transmitted}} to the brain is that the column is skinny and shrunken, ( ___ ) strong enough to hold up anything at all, just as a perfectly horizontal line conveys the {{59|impression}} of sagging downward weakly in the middle.",
   "choices": {
    "a": "no",
    "b": "neither",
@@ -4798,7 +4806,7 @@
   "year": 2013,
   "exam_q": 59,
   "context": null,
-  "sentence": "But the Greek architects knew (56) of perception to realize that when the eye views a perfectly straight vertical shaft, the message (57) to the brain is that the column is skinny and shrunken, (58) strong enough to hold up anything at all, just as a perfectly horizontal line conveys the ( ___ ) of sagging downward weakly in the middle.",
+  "sentence": "But the Greek architects knew {{56|enough}} of perception to realize that when the eye views a perfectly straight vertical shaft, the message {{57|transmitted}} to the brain is that the column is skinny and shrunken, {{58|not}} strong enough to hold up anything at all, just as a perfectly horizontal line conveys the ( ___ ) of sagging downward weakly in the middle.",
   "choices": {
    "a": "glance",
    "b": "impression",
@@ -4822,7 +4830,7 @@
   "year": 2013,
   "exam_q": 60,
   "context": null,
-  "sentence": "For exactly this ( ___ ) the architects introduced the subtle curve of entasis, a gentle widening of the outline of a column; and the eye was completely satisfied that it was beautiful (61) it looked strong enough to (62) its function.",
+  "sentence": "For exactly this ( ___ ) the architects introduced the subtle curve of entasis, a gentle widening of the outline of a column; and the eye was completely satisfied that it was beautiful {{61|because}} it looked strong enough to {{62|fulfill}} its function.",
   "choices": {
    "a": "art",
    "b": "reason",
@@ -4846,7 +4854,7 @@
   "year": 2013,
   "exam_q": 61,
   "context": "But the Greek architects knew enough of perception to realize that when the eye views a perfectly straight vertical shaft, the message transmitted to the brain is that the column is skinny and shrunken, not strong enough to hold up anything at all, just as a perfectly horizontal line conveys the impression of sagging downward weakly in the middle.",
-  "sentence": "For exactly this (60) the architects introduced the subtle curve of entasis, a gentle widening of the outline of a column; and the eye was completely satisfied that it was beautiful ( ___ ) it looked strong enough to (62) its function.",
+  "sentence": "For exactly this {{60|reason}} the architects introduced the subtle curve of entasis, a gentle widening of the outline of a column; and the eye was completely satisfied that it was beautiful ( ___ ) it looked strong enough to {{62|fulfill}} its function.",
   "choices": {
    "a": "because",
    "b": "by",
@@ -4870,7 +4878,7 @@
   "year": 2013,
   "exam_q": 62,
   "context": null,
-  "sentence": "For exactly this (60) the architects introduced the subtle curve of entasis, a gentle widening of the outline of a column; and the eye was completely satisfied that it was beautiful (61) it looked strong enough to ( ___ ) its function.",
+  "sentence": "For exactly this {{60|reason}} the architects introduced the subtle curve of entasis, a gentle widening of the outline of a column; and the eye was completely satisfied that it was beautiful {{61|because}} it looked strong enough to ( ___ ) its function.",
   "choices": {
    "a": "fulfill",
    "b": "grant",
@@ -4894,7 +4902,7 @@
   "year": 2013,
   "exam_q": 63,
   "context": null,
-  "sentence": "Thus we find a ( ___ ) recognition of a (64) truth that, in any great architectural creation, each piece of the structure (65) merely be strong enough; it must also look strong enough.",
+  "sentence": "Thus we find a ( ___ ) recognition of a {{64|fundamental}} truth that, in any great architectural creation, each piece of the structure {{65|must not}} merely be strong enough; it must also look strong enough.",
   "choices": {
    "a": "deliberate",
    "b": "deliberateness",
@@ -4918,7 +4926,7 @@
   "year": 2013,
   "exam_q": 64,
   "context": null,
-  "sentence": "Thus we find a (63) recognition of a ( ___ ) truth that, in any great architectural creation, each piece of the structure (65) merely be strong enough; it must also look strong enough.",
+  "sentence": "Thus we find a {{63|deliberate}} recognition of a ( ___ ) truth that, in any great architectural creation, each piece of the structure {{65|must not}} merely be strong enough; it must also look strong enough.",
   "choices": {
    "a": "constructed",
    "b": "fundamental",
@@ -4940,7 +4948,7 @@
   "year": 2013,
   "exam_q": 65,
   "context": null,
-  "sentence": "Thus we find a (63) recognition of a (64) truth that, in any great architectural creation, each piece of the structure ( ___ ) merely be strong enough; it must also look strong enough.",
+  "sentence": "Thus we find a {{63|deliberate}} recognition of a {{64|fundamental}} truth that, in any great architectural creation, each piece of the structure ( ___ ) merely be strong enough; it must also look strong enough.",
   "choices": {
    "a": "may",
    "b": "may not",
@@ -4964,7 +4972,7 @@
   "year": 2013,
   "exam_q": 66,
   "context": null,
-  "sentence": "To ( ___ ) this end, the great Greek architects fearlessly sacrificed (67) truth to the higher requirements (68) their art.",
+  "sentence": "To ( ___ ) this end, the great Greek architects fearlessly sacrificed {{67|scientific}} truth to the higher requirements {{68|of}} their art.",
   "choices": {
    "a": "attain",
    "b": "bring",
@@ -4988,7 +4996,7 @@
   "year": 2013,
   "exam_q": 67,
   "context": null,
-  "sentence": "To (66) this end, the great Greek architects fearlessly sacrificed ( ___ ) truth to the higher requirements (68) their art.",
+  "sentence": "To {{66|attain}} this end, the great Greek architects fearlessly sacrificed ( ___ ) truth to the higher requirements {{68|of}} their art.",
   "choices": {
    "a": "science",
    "b": "scientific",
@@ -5012,7 +5020,7 @@
   "year": 2013,
   "exam_q": 68,
   "context": null,
-  "sentence": "To (66) this end, the great Greek architects fearlessly sacrificed (67) truth to the higher requirements ( ___ ) their art.",
+  "sentence": "To {{66|attain}} this end, the great Greek architects fearlessly sacrificed {{67|scientific}} truth to the higher requirements ( ___ ) their art.",
   "choices": {
    "a": "as",
    "b": "at",
@@ -5034,7 +5042,7 @@
   "year": 2013,
   "exam_q": 69,
   "context": "To attain this end, the great Greek architects fearlessly sacrificed scientific truth to the higher requirements of their art.",
-  "sentence": "They realized, ( ___ ), the difference between cold exactitude and living art, between simple mathematics and perceived (70).",
+  "sentence": "They realized, ( ___ ), the difference between cold exactitude and living art, between simple mathematics and perceived {{70|beauty}}.",
   "choices": {
    "a": "along with",
    "b": "as opposed to",
@@ -5058,7 +5066,7 @@
   "year": 2013,
   "exam_q": 70,
   "context": null,
-  "sentence": "They realized, (69), the difference between cold exactitude and living art, between simple mathematics and perceived ( ___ ).",
+  "sentence": "They realized, {{69|in fact}}, the difference between cold exactitude and living art, between simple mathematics and perceived ( ___ ).",
   "choices": {
    "a": "beautiful",
    "b": "beautify",
@@ -5085,7 +5093,7 @@
   "part": "I",
   "stem": "What do the \"both words\" underlined in paragraph 2 refer to?",
   "target": "both words",
-  "context": "That little word \"despite\" makes all the difference.",
+  "context": "The terms \"bravery\" and \"courage\" are often considered synonymous. … That little word \"despite\" makes all the difference.",
   "sentence": "Robert Kennedy used [[both words]] when he spoke to a group of South African students in 1966 during the height of apartheid, that country's terrible practice of racial prejudice and discrimination at that time.",
   "choices": {
    "a": "moral/courage",
@@ -5138,7 +5146,7 @@
   "year": 2012,
   "exam_q": 51,
   "context": null,
-  "sentence": "An analogy compares one thing to another, such as A is to B as C is to D, whereas a metaphor boldly states that A is B. ( ___ ) analogies and metaphors are constructed slightly differently, they share one essential feature: They try to (52) a key aspect of one thing by relating it (53) something else.",
+  "sentence": "An analogy compares one thing to another, such as A is to B as C is to D, whereas a metaphor boldly states that A is B. ( ___ ) analogies and metaphors are constructed slightly differently, they share one essential feature: They try to {{52|capture}} a key aspect of one thing by relating it {{53|to}} something else.",
   "choices": {
    "a": "Even though",
    "b": "For instance",
@@ -5162,7 +5170,7 @@
   "year": 2012,
   "exam_q": 52,
   "context": null,
-  "sentence": "An analogy compares one thing to another, such as A is to B as C is to D, whereas a metaphor boldly states that A is B. (51) analogies and metaphors are constructed slightly differently, they share one essential feature: They try to ( ___ ) a key aspect of one thing by relating it (53) something else.",
+  "sentence": "An analogy compares one thing to another, such as A is to B as C is to D, whereas a metaphor boldly states that A is B. {{51|Even though}} analogies and metaphors are constructed slightly differently, they share one essential feature: They try to ( ___ ) a key aspect of one thing by relating it {{53|to}} something else.",
   "choices": {
    "a": "avoid",
    "b": "capture",
@@ -5186,7 +5194,7 @@
   "year": 2012,
   "exam_q": 53,
   "context": null,
-  "sentence": "An analogy compares one thing to another, such as A is to B as C is to D, whereas a metaphor boldly states that A is B. (51) analogies and metaphors are constructed slightly differently, they share one essential feature: They try to (52) a key aspect of one thing by relating it ( ___ ) something else.",
+  "sentence": "An analogy compares one thing to another, such as A is to B as C is to D, whereas a metaphor boldly states that A is B. {{51|Even though}} analogies and metaphors are constructed slightly differently, they share one essential feature: They try to {{52|capture}} a key aspect of one thing by relating it ( ___ ) something else.",
   "choices": {
    "a": "by",
    "b": "for",
@@ -5234,7 +5242,7 @@
   "year": 2012,
   "exam_q": 55,
   "context": null,
-  "sentence": "Notice that Cooley does not ( ___ ) that a skyscraper is like a boast—(56) would make it a simile—but he (57) that it is a boast, fulfilling the A is B requirement and (58) it a metaphor.",
+  "sentence": "Notice that Cooley does not ( ___ ) that a skyscraper is like a boast—{{56|which}} would make it a simile—but he {{57|maintains}} that it is a boast, fulfilling the A is B requirement and {{58|making}} it a metaphor.",
   "choices": {
    "a": "debate",
    "b": "pretend",
@@ -5258,7 +5266,7 @@
   "year": 2012,
   "exam_q": 56,
   "context": null,
-  "sentence": "Notice that Cooley does not (55) that a skyscraper is like a boast—( ___ ) would make it a simile—but he (57) that it is a boast, fulfilling the A is B requirement and (58) it a metaphor.",
+  "sentence": "Notice that Cooley does not {{55|state}} that a skyscraper is like a boast—( ___ ) would make it a simile—but he {{57|maintains}} that it is a boast, fulfilling the A is B requirement and {{58|making}} it a metaphor.",
   "choices": {
    "a": "what",
    "b": "where",
@@ -5282,7 +5290,7 @@
   "year": 2012,
   "exam_q": 57,
   "context": null,
-  "sentence": "Notice that Cooley does not (55) that a skyscraper is like a boast—(56) would make it a simile—but he ( ___ ) that it is a boast, fulfilling the A is B requirement and (58) it a metaphor.",
+  "sentence": "Notice that Cooley does not {{55|state}} that a skyscraper is like a boast—{{56|which}} would make it a simile—but he ( ___ ) that it is a boast, fulfilling the A is B requirement and {{58|making}} it a metaphor.",
   "choices": {
    "a": "confuses",
    "b": "maintains",
@@ -5306,7 +5314,7 @@
   "year": 2012,
   "exam_q": 58,
   "context": null,
-  "sentence": "Notice that Cooley does not (55) that a skyscraper is like a boast—(56) would make it a simile—but he (57) that it is a boast, fulfilling the A is B requirement and ( ___ ) it a metaphor.",
+  "sentence": "Notice that Cooley does not {{55|state}} that a skyscraper is like a boast—{{56|which}} would make it a simile—but he {{57|maintains}} that it is a boast, fulfilling the A is B requirement and ( ___ ) it a metaphor.",
   "choices": {
    "a": "allowing",
    "b": "changing",
@@ -5330,7 +5338,7 @@
   "year": 2012,
   "exam_q": 59,
   "context": null,
-  "sentence": "There is one thing ( ___ ) Cooley's metaphor that (60) apparent.",
+  "sentence": "There is one thing ( ___ ) Cooley's metaphor that {{60|may not be}} apparent.",
   "choices": {
    "a": "about",
    "b": "for",
@@ -5352,7 +5360,7 @@
   "year": 2012,
   "exam_q": 60,
   "context": null,
-  "sentence": "There is one thing (59) Cooley's metaphor that ( ___ ) apparent.",
+  "sentence": "There is one thing {{59|about}} Cooley's metaphor that ( ___ ) apparent.",
   "choices": {
    "a": "be not",
    "b": "could be not",
@@ -5424,7 +5432,7 @@
   "year": 2012,
   "exam_q": 63,
   "context": null,
-  "sentence": "In the fascinating world of human ( ___ ), we make (64) for such flights of fancy by calling them figuratively true.",
+  "sentence": "In the fascinating world of human ( ___ ), we make {{64|allowances}} for such flights of fancy by calling them figuratively true.",
   "choices": {
    "a": "language",
    "b": "lectures",
@@ -5446,7 +5454,7 @@
   "year": 2012,
   "exam_q": 64,
   "context": null,
-  "sentence": "In the fascinating world of human (63), we make ( ___ ) for such flights of fancy by calling them figuratively true.",
+  "sentence": "In the fascinating world of human {{63|language}}, we make ( ___ ) for such flights of fancy by calling them figuratively true.",
   "choices": {
    "a": "allowances",
    "b": "connections",
@@ -5470,7 +5478,7 @@
   "year": 2012,
   "exam_q": 65,
   "context": "In the fascinating world of human language, we make allowances for such flights of fancy by calling them figuratively true.",
-  "sentence": "( ___ ) leaps of faith in religion, when people believe things that (66) proved, we make leaps of logic when we use metaphors.",
+  "sentence": "( ___ ) leaps of faith in religion, when people believe things that {{66|cannot be}} proved, we make leaps of logic when we use metaphors.",
   "choices": {
    "a": "Like",
    "b": "Exactly",
@@ -5494,7 +5502,7 @@
   "year": 2012,
   "exam_q": 66,
   "context": null,
-  "sentence": "(65) leaps of faith in religion, when people believe things that ( ___ ) proved, we make leaps of logic when we use metaphors.",
+  "sentence": "{{65|Like}} leaps of faith in religion, when people believe things that ( ___ ) proved, we make leaps of logic when we use metaphors.",
   "choices": {
    "a": "are",
    "b": "cannot be",
@@ -5516,7 +5524,7 @@
   "year": 2012,
   "exam_q": 67,
   "context": null,
-  "sentence": "We say ( ___ ) is true, even when we know it is literally untrue and (68) false.",
+  "sentence": "We say ( ___ ) is true, even when we know it is literally untrue and {{68|logically}} false.",
   "choices": {
    "a": "everything",
    "b": "nothing",
@@ -5538,7 +5546,7 @@
   "year": 2012,
   "exam_q": 68,
   "context": null,
-  "sentence": "We say (67) is true, even when we know it is literally untrue and ( ___ ) false.",
+  "sentence": "We say {{67|something}} is true, even when we know it is literally untrue and ( ___ ) false.",
   "choices": {
    "a": "logic",
    "b": "logical",
@@ -5563,7 +5571,7 @@
   "year": 2012,
   "exam_q": 69,
   "context": null,
-  "sentence": "Here is one last example, a truly ( ___ ) observation by St. Augustine: \"The world is a (70), and those who do not travel read only one page.\"",
+  "sentence": "Here is one last example, a truly ( ___ ) observation by St. Augustine: \"The world is a {{70|book}}, and those who do not travel read only one page.\"",
   "choices": {
    "a": "excitable",
    "b": "incapable",
@@ -5585,7 +5593,7 @@
   "year": 2012,
   "exam_q": 70,
   "context": null,
-  "sentence": "Here is one last example, a truly (69) observation by St. Augustine: \"The world is a ( ___ ), and those who do not travel read only one page.\"",
+  "sentence": "Here is one last example, a truly {{69|memorable}} observation by St. Augustine: \"The world is a ( ___ ), and those who do not travel read only one page.\"",
   "choices": {
    "a": "ball",
    "b": "book",
@@ -5711,7 +5719,8 @@
   ],
   "doc": "ENG-2012.pdf",
   "key_ref": null,
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "Since 1948, when the state of Israel was founded and hundreds of thousands of Palestinians fled or were driven from their native land, the issue of Palestine has dominated Middle-Eastern politics."
  },
  {
   "id": "2012-P1-45",
@@ -5801,7 +5810,7 @@
   "year": 2011,
   "exam_q": 51,
   "context": null,
-  "sentence": "It is of the ( ___ ) significance that it has been only (52) the last (53) decades that any empirically sound questions and answers could be (54).",
+  "sentence": "It is of the ( ___ ) significance that it has been only {{52|during}} the last {{53|few}} decades that any empirically sound questions and answers could be {{54|formulated}}.",
   "choices": {
    "a": "best",
    "b": "excellent",
@@ -5825,7 +5834,7 @@
   "year": 2011,
   "exam_q": 52,
   "context": null,
-  "sentence": "It is of the (51) significance that it has been only ( ___ ) the last (53) decades that any empirically sound questions and answers could be (54).",
+  "sentence": "It is of the {{51|greatest}} significance that it has been only ( ___ ) the last {{53|few}} decades that any empirically sound questions and answers could be {{54|formulated}}.",
   "choices": {
    "a": "among",
    "b": "at",
@@ -5847,7 +5856,7 @@
   "year": 2011,
   "exam_q": 53,
   "context": null,
-  "sentence": "It is of the (51) significance that it has been only (52) the last ( ___ ) decades that any empirically sound questions and answers could be (54).",
+  "sentence": "It is of the {{51|greatest}} significance that it has been only {{52|during}} the last ( ___ ) decades that any empirically sound questions and answers could be {{54|formulated}}.",
   "choices": {
    "a": "few",
    "b": "limited",
@@ -5871,7 +5880,7 @@
   "year": 2011,
   "exam_q": 54,
   "context": null,
-  "sentence": "It is of the (51) significance that it has been only (52) the last (53) decades that any empirically sound questions and answers could be ( ___ ).",
+  "sentence": "It is of the {{51|greatest}} significance that it has been only {{52|during}} the last {{53|few}} decades that any empirically sound questions and answers could be ( ___ ).",
   "choices": {
    "a": "alternated",
    "b": "formulated",
@@ -5917,7 +5926,7 @@
   "year": 2011,
   "exam_q": 56,
   "context": null,
-  "sentence": "It required the ( ___ ) of our understanding in many fields of knowledge (57) the complexities of the problem could be analyzed.",
+  "sentence": "It required the ( ___ ) of our understanding in many fields of knowledge {{57|before}} the complexities of the problem could be analyzed.",
   "choices": {
    "a": "collapse",
    "b": "density",
@@ -5939,7 +5948,7 @@
   "year": 2011,
   "exam_q": 57,
   "context": "First, the problem was simply too difficult.",
-  "sentence": "It required the (56) of our understanding in many fields of knowledge ( ___ ) the complexities of the problem could be analyzed.",
+  "sentence": "It required the {{56|growth}} of our understanding in many fields of knowledge ( ___ ) the complexities of the problem could be analyzed.",
   "choices": {
    "a": "as",
    "b": "before",
@@ -5961,7 +5970,7 @@
   "year": 2011,
   "exam_q": 58,
   "context": "It required the growth of our understanding in many fields of knowledge before the complexities of the problem could be analyzed.",
-  "sentence": "( ___ ) in our time have we been able to ask the questions which could (59) viable hypotheses.",
+  "sentence": "( ___ ) in our time have we been able to ask the questions which could {{59|produce}} viable hypotheses.",
   "choices": {
    "a": "If",
    "b": "Just",
@@ -5985,7 +5994,7 @@
   "year": 2011,
   "exam_q": 59,
   "context": null,
-  "sentence": "(58) in our time have we been able to ask the questions which could ( ___ ) viable hypotheses.",
+  "sentence": "{{58|Only}} in our time have we been able to ask the questions which could ( ___ ) viable hypotheses.",
   "choices": {
    "a": "contract",
    "b": "produce",
@@ -6007,7 +6016,7 @@
   "year": 2011,
   "exam_q": 60,
   "context": null,
-  "sentence": "This is an excellent example ( ___ ) the fact that (61) we must bide our time before we know enough (62) the right question.",
+  "sentence": "This is an excellent example ( ___ ) the fact that {{61|frequently}} we must bide our time before we know enough {{62|to ask}} the right question.",
   "choices": {
    "a": "by",
    "b": "in",
@@ -6031,7 +6040,7 @@
   "year": 2011,
   "exam_q": 61,
   "context": null,
-  "sentence": "This is an excellent example (60) the fact that ( ___ ) we must bide our time before we know enough (62) the right question.",
+  "sentence": "This is an excellent example {{60|of}} the fact that ( ___ ) we must bide our time before we know enough {{62|to ask}} the right question.",
   "choices": {
    "a": "frequent",
    "b": "frequency",
@@ -6055,7 +6064,7 @@
   "year": 2011,
   "exam_q": 62,
   "context": null,
-  "sentence": "This is an excellent example (60) the fact that (61) we must bide our time before we know enough ( ___ ) the right question.",
+  "sentence": "This is an excellent example {{60|of}} the fact that {{61|frequently}} we must bide our time before we know enough ( ___ ) the right question.",
   "choices": {
    "a": "ask",
    "b": "asking",
@@ -6079,7 +6088,7 @@
   "year": 2011,
   "exam_q": 63,
   "context": null,
-  "sentence": "Secondly, the topic was considered ( ___ ), and any scientific inquiry (64) the greatest resistance.",
+  "sentence": "Secondly, the topic was considered ( ___ ), and any scientific inquiry {{64|encountered}} the greatest resistance.",
   "choices": {
    "a": "sacred",
    "b": "scarce",
@@ -6096,14 +6105,15 @@
   ],
   "doc": "ENG-2011.pdf",
   "part": "II",
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "Religious answers to the question \"What is 'Life'?\" had long been considered final."
  },
  {
   "id": "2011-P2-14",
   "year": 2011,
   "exam_q": 64,
   "context": null,
-  "sentence": "Secondly, the topic was considered (63), and any scientific inquiry ( ___ ) the greatest resistance.",
+  "sentence": "Secondly, the topic was considered {{63|sacred}}, and any scientific inquiry ( ___ ) the greatest resistance.",
   "choices": {
    "a": "argued",
    "b": "blocked",
@@ -6127,7 +6137,7 @@
   "year": 2011,
   "exam_q": 65,
   "context": null,
-  "sentence": "To date, long lists of defining ( ___ ) for the word \"life\" have been proposed, (66) an accurate, workable (67) is still lacking.",
+  "sentence": "To date, long lists of defining ( ___ ) for the word \"life\" have been proposed, {{66|yet}} an accurate, workable {{67|definition}} is still lacking.",
   "choices": {
    "a": "characters",
    "b": "characterizes",
@@ -6151,7 +6161,7 @@
   "year": 2011,
   "exam_q": 66,
   "context": "Religious answers to the question \"What is 'Life'?\" had long been considered final.",
-  "sentence": "To date, long lists of defining (65) for the word \"life\" have been proposed, ( ___ ) an accurate, workable (67) is still lacking.",
+  "sentence": "To date, long lists of defining {{65|characteristics}} for the word \"life\" have been proposed, ( ___ ) an accurate, workable {{67|definition}} is still lacking.",
   "choices": {
    "a": "instead",
    "b": "there",
@@ -6175,7 +6185,7 @@
   "year": 2011,
   "exam_q": 67,
   "context": null,
-  "sentence": "To date, long lists of defining (65) for the word \"life\" have been proposed, (66) an accurate, workable ( ___ ) is still lacking.",
+  "sentence": "To date, long lists of defining {{65|characteristics}} for the word \"life\" have been proposed, {{66|yet}} an accurate, workable ( ___ ) is still lacking.",
   "choices": {
    "a": "contrast",
    "b": "definition",
@@ -6221,7 +6231,7 @@
   "year": 2011,
   "exam_q": 69,
   "context": null,
-  "sentence": "Any organism ( ___ ) these two qualities probably (70) alive.",
+  "sentence": "Any organism ( ___ ) these two qualities probably {{70|can be considered}} alive.",
   "choices": {
    "a": "absorbing",
    "b": "denying",
@@ -6245,7 +6255,7 @@
   "year": 2011,
   "exam_q": 70,
   "context": null,
-  "sentence": "Any organism (69) these two qualities probably ( ___ ) alive.",
+  "sentence": "Any organism {{69|possessing}} these two qualities probably ( ___ ) alive.",
   "choices": {
    "a": "considers",
    "b": "is considering",
@@ -6401,7 +6411,7 @@
   "year": 2010,
   "exam_q": 52,
   "context": "We know, at least, that what sets the hero apart is some extraordinary achievement.",
-  "sentence": "( ___ ) this feat may be, it is recognized at once by everyone (53) a good thing; and somehow, the (54) of it seems larger than life.",
+  "sentence": "( ___ ) this feat may be, it is recognized at once by everyone {{53|as}} a good thing; and somehow, the {{54|achieving}} of it seems larger than life.",
   "choices": {
    "a": "However",
    "b": "Because",
@@ -6425,7 +6435,7 @@
   "year": 2010,
   "exam_q": 53,
   "context": null,
-  "sentence": "(52) this feat may be, it is recognized at once by everyone ( ___ ) a good thing; and somehow, the (54) of it seems larger than life.",
+  "sentence": "{{52|Whatever}} this feat may be, it is recognized at once by everyone ( ___ ) a good thing; and somehow, the {{54|achieving}} of it seems larger than life.",
   "choices": {
    "a": "as",
    "b": "for",
@@ -6449,7 +6459,7 @@
   "year": 2010,
   "exam_q": 54,
   "context": null,
-  "sentence": "(52) this feat may be, it is recognized at once by everyone (53) a good thing; and somehow, the ( ___ ) of it seems larger than life.",
+  "sentence": "{{52|Whatever}} this feat may be, it is recognized at once by everyone {{53|as}} a good thing; and somehow, the ( ___ ) of it seems larger than life.",
   "choices": {
    "a": "achieve",
    "b": "achieved",
@@ -6472,7 +6482,7 @@
   "id": "2010-P2-05",
   "year": 2010,
   "exam_q": 55,
-  "context": null,
+  "context": "We know, at least, that what sets the hero {{51|apart}} is some extraordinary achievement. {{52|Whatever}} this feat may be, it is recognized at once by everyone {{53|as}} a good thing; and somehow, the {{54|achieving}} of it seems larger than life.",
   "sentence": "Even by such a minimum ( ___ ), the hero's action criticizes us.",
   "choices": {
    "a": "definition",
@@ -6495,7 +6505,7 @@
   "year": 2010,
   "exam_q": 56,
   "context": null,
-  "sentence": "We have been ( ___ ) frantically merely to achieve the ordinary, that measure of (57) each of us is supposedly entitled (58).",
+  "sentence": "We have been ( ___ ) frantically merely to achieve the ordinary, that measure of {{57|happiness}} each of us is supposedly entitled {{58|to}}.",
   "choices": {
    "a": "fleeing",
    "b": "offering",
@@ -6519,7 +6529,7 @@
   "year": 2010,
   "exam_q": 57,
   "context": null,
-  "sentence": "We have been (56) frantically merely to achieve the ordinary, that measure of ( ___ ) each of us is supposedly entitled (58).",
+  "sentence": "We have been {{56|struggling}} frantically merely to achieve the ordinary, that measure of ( ___ ) each of us is supposedly entitled {{58|to}}.",
   "choices": {
    "a": "attitude",
    "b": "awareness",
@@ -6534,14 +6544,15 @@
   "tags": [],
   "doc": "ENG-2010.pdf",
   "part": "II",
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "… {{63|Moreover}}, the hero shows us that happiness is hardly a right or an end in itself."
  },
  {
   "id": "2010-P2-08",
   "year": 2010,
   "exam_q": 58,
   "context": null,
-  "sentence": "We have been (56) frantically merely to achieve the ordinary, that measure of (57) each of us is supposedly entitled ( ___ ).",
+  "sentence": "We have been {{56|struggling}} frantically merely to achieve the ordinary, that measure of {{57|happiness}} each of us is supposedly entitled ( ___ ).",
   "choices": {
    "a": "by",
    "b": "for",
@@ -6565,7 +6576,7 @@
   "year": 2010,
   "exam_q": 59,
   "context": null,
-  "sentence": "The hero, in contrast, ( ___ ) the ordinary and attains greatness (60) serving some greater good.",
+  "sentence": "The hero, in contrast, ( ___ ) the ordinary and attains greatness {{60|by}} serving some greater good.",
   "choices": {
    "a": "overcome",
    "b": "overcomes",
@@ -6589,7 +6600,7 @@
   "year": 2010,
   "exam_q": 60,
   "context": null,
-  "sentence": "The hero, in contrast, (59) the ordinary and attains greatness ( ___ ) serving some greater good.",
+  "sentence": "The hero, in contrast, {{59|overcomes}} the ordinary and attains greatness ( ___ ) serving some greater good.",
   "choices": {
    "a": "by",
    "b": "of",
@@ -6613,7 +6624,7 @@
   "year": 2010,
   "exam_q": 61,
   "context": null,
-  "sentence": "The hero's example ( ___ ) us that we fail (62) by aiming too high but by aiming too low.",
+  "sentence": "The hero's example ( ___ ) us that we fail {{62|not}} by aiming too high but by aiming too low.",
   "choices": {
    "a": "forces",
    "b": "delays",
@@ -6637,7 +6648,7 @@
   "year": 2010,
   "exam_q": 62,
   "context": null,
-  "sentence": "The hero's example (61) us that we fail ( ___ ) by aiming too high but by aiming too low.",
+  "sentence": "The hero's example {{61|shows}} us that we fail ( ___ ) by aiming too high but by aiming too low.",
   "choices": {
    "a": "else",
    "b": "less",
@@ -6685,7 +6696,7 @@
   "year": 2010,
   "exam_q": 64,
   "context": null,
-  "sentence": "Heroes ( ___ ) not happiness but goodness, and their (65) lies in achieving it.",
+  "sentence": "Heroes ( ___ ) not happiness but goodness, and their {{65|fulfillment}} lies in achieving it.",
   "choices": {
    "a": "try",
    "b": "aim",
@@ -6709,7 +6720,7 @@
   "year": 2010,
   "exam_q": 65,
   "context": null,
-  "sentence": "Heroes (64) not happiness but goodness, and their ( ___ ) lies in achieving it.",
+  "sentence": "Heroes {{64|seek}} not happiness but goodness, and their ( ___ ) lies in achieving it.",
   "choices": {
    "a": "fulfill",
    "b": "fulfilling",
@@ -6733,7 +6744,7 @@
   "year": 2010,
   "exam_q": 66,
   "context": "Heroes seek not happiness but goodness, and their fulfillment lies in achieving it.",
-  "sentence": "Their satisfaction is ( ___ ) a result—a reward, in short, (67).",
+  "sentence": "Their satisfaction is ( ___ ) a result—a reward, in short, {{67|for doing good}}.",
   "choices": {
    "a": "to",
    "b": "that",
@@ -6755,7 +6766,7 @@
   "year": 2010,
   "exam_q": 67,
   "context": null,
-  "sentence": "Their satisfaction is (66) a result—a reward, in short, ( ___ ).",
+  "sentence": "Their satisfaction is {{66|thus}} a result—a reward, in short, ( ___ ).",
   "choices": {
    "a": "doing for good",
    "b": "good doing",
@@ -6803,7 +6814,7 @@
   "year": 2010,
   "exam_q": 69,
   "context": null,
-  "sentence": "To ( ___ ) happiness for its own sake, it (70), was the surest way to lose it.",
+  "sentence": "To ( ___ ) happiness for its own sake, it {{70|was believed}}, was the surest way to lose it.",
   "choices": {
    "a": "engage",
    "b": "catch",
@@ -6827,7 +6838,7 @@
   "year": 2010,
   "exam_q": 70,
   "context": null,
-  "sentence": "To (69) happiness for its own sake, it ( ___ ), was the surest way to lose it.",
+  "sentence": "To {{69|pursue}} happiness for its own sake, it ( ___ ), was the surest way to lose it.",
   "choices": {
    "a": "believes",
    "b": "had believed",
@@ -6960,7 +6971,7 @@
   "year": 2009,
   "exam_q": 51,
   "context": null,
-  "sentence": "An individual's interpersonal communication is greatly ( ___ ) by that individual's position in the organization, (52) that organization be at the level of a family, at the level of a business or social (53), or at the level of society as a (54).",
+  "sentence": "An individual's interpersonal communication is greatly ( ___ ) by that individual's position in the organization, {{52|whether}} that organization be at the level of a family, at the level of a business or social {{53|enterprise}}, or at the level of society as a {{54|whole}}.",
   "choices": {
    "a": "affected",
    "b": "attached",
@@ -6982,7 +6993,7 @@
   "year": 2009,
   "exam_q": 52,
   "context": null,
-  "sentence": "An individual's interpersonal communication is greatly (51) by that individual's position in the organization, ( ___ ) that organization be at the level of a family, at the level of a business or social (53), or at the level of society as a (54).",
+  "sentence": "An individual's interpersonal communication is greatly {{51|affected}} by that individual's position in the organization, ( ___ ) that organization be at the level of a family, at the level of a business or social {{53|enterprise}}, or at the level of society as a {{54|whole}}.",
   "choices": {
    "a": "because",
    "b": "so",
@@ -7006,7 +7017,7 @@
   "year": 2009,
   "exam_q": 53,
   "context": null,
-  "sentence": "An individual's interpersonal communication is greatly (51) by that individual's position in the organization, (52) that organization be at the level of a family, at the level of a business or social ( ___ ), or at the level of society as a (54).",
+  "sentence": "An individual's interpersonal communication is greatly {{51|affected}} by that individual's position in the organization, {{52|whether}} that organization be at the level of a family, at the level of a business or social ( ___ ), or at the level of society as a {{54|whole}}.",
   "choices": {
    "a": "crowd",
    "b": "enterprise",
@@ -7028,7 +7039,7 @@
   "year": 2009,
   "exam_q": 54,
   "context": null,
-  "sentence": "An individual's interpersonal communication is greatly (51) by that individual's position in the organization, (52) that organization be at the level of a family, at the level of a business or social (53), or at the level of society as a ( ___ ).",
+  "sentence": "An individual's interpersonal communication is greatly {{51|affected}} by that individual's position in the organization, {{52|whether}} that organization be at the level of a family, at the level of a business or social {{53|enterprise}}, or at the level of society as a ( ___ ).",
   "choices": {
    "a": "boundary",
    "b": "goal",
@@ -7052,7 +7063,7 @@
   "year": 2009,
   "exam_q": 55,
   "context": null,
-  "sentence": "A doctor can say certain things ( ___ ), because of the doctor's position in the social order, cause little concern in the (56).",
+  "sentence": "A doctor can say certain things ( ___ ), because of the doctor's position in the social order, cause little concern in the {{56|listener}}.",
   "choices": {
    "a": "how",
    "b": "where",
@@ -7076,7 +7087,7 @@
   "year": 2009,
   "exam_q": 56,
   "context": null,
-  "sentence": "A doctor can say certain things (55), because of the doctor's position in the social order, cause little concern in the ( ___ ).",
+  "sentence": "A doctor can say certain things {{55|which}}, because of the doctor's position in the social order, cause little concern in the ( ___ ).",
   "choices": {
    "a": "follower",
    "b": "listener",
@@ -7098,7 +7109,7 @@
   "year": 2009,
   "exam_q": 57,
   "context": null,
-  "sentence": "If, for instance, you are ( ___ ) a medical examination, you are not surprised by the doctor's (58) that you take off your shirt.",
+  "sentence": "If, for instance, you are ( ___ ) a medical examination, you are not surprised by the doctor's {{58|request}} that you take off your shirt.",
   "choices": {
    "a": "approaching",
    "b": "conducting",
@@ -7122,7 +7133,7 @@
   "year": 2009,
   "exam_q": 58,
   "context": null,
-  "sentence": "If, for instance, you are (57) a medical examination, you are not surprised by the doctor's ( ___ ) that you take off your shirt.",
+  "sentence": "If, for instance, you are {{57|undergoing}} a medical examination, you are not surprised by the doctor's ( ___ ) that you take off your shirt.",
   "choices": {
    "a": "deception",
    "b": "diagnosis",
@@ -7139,14 +7150,15 @@
   ],
   "doc": "ENG-2009.pdf",
   "part": "II",
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "{{59|If}} you were appearing for a job interview and {{60|faced}} the same request you might well show hesitation and {{61|confusion}}."
  },
  {
   "id": "2009-P2-09",
   "year": 2009,
   "exam_q": 59,
   "context": "If, for instance, you are undergoing a medical examination, you are not surprised by the doctor's request that you take off your shirt.",
-  "sentence": "( ___ ) you were appearing for a job interview and (60) the same request you might well show hesitation and (61).",
+  "sentence": "( ___ ) you were appearing for a job interview and {{60|faced}} the same request you might well show hesitation and {{61|confusion}}.",
   "choices": {
    "a": "Before",
    "b": "If",
@@ -7170,7 +7182,7 @@
   "year": 2009,
   "exam_q": 60,
   "context": null,
-  "sentence": "(59) you were appearing for a job interview and ( ___ ) the same request you might well show hesitation and (61).",
+  "sentence": "{{59|If}} you were appearing for a job interview and ( ___ ) the same request you might well show hesitation and {{61|confusion}}.",
   "choices": {
    "a": "asked",
    "b": "examined",
@@ -7192,7 +7204,7 @@
   "year": 2009,
   "exam_q": 61,
   "context": null,
-  "sentence": "(59) you were appearing for a job interview and (60) the same request you might well show hesitation and ( ___ ).",
+  "sentence": "{{59|If}} you were appearing for a job interview and {{60|faced}} the same request you might well show hesitation and ( ___ ).",
   "choices": {
    "a": "attention",
    "b": "confusion",
@@ -7238,7 +7250,7 @@
   "year": 2009,
   "exam_q": 63,
   "context": null,
-  "sentence": "Parents ( ___ ) their own children to perform (64) to their directions, (65) should not expect the children of others to meet those requests with the same (66).",
+  "sentence": "Parents ( ___ ) their own children to perform {{64|according}} to their directions, {{65|but}} should not expect the children of others to meet those requests with the same {{66|motivation}}.",
   "choices": {
    "a": "can know",
    "b": "can expect",
@@ -7262,7 +7274,7 @@
   "year": 2009,
   "exam_q": 64,
   "context": null,
-  "sentence": "Parents (63) their own children to perform ( ___ ) to their directions, (65) should not expect the children of others to meet those requests with the same (66).",
+  "sentence": "Parents {{63|can expect}} their own children to perform ( ___ ) to their directions, {{65|but}} should not expect the children of others to meet those requests with the same {{66|motivation}}.",
   "choices": {
    "a": "according",
    "b": "actions",
@@ -7286,7 +7298,7 @@
   "year": 2009,
   "exam_q": 65,
   "context": "A lawyer or a school counselor can ask questions which if asked by someone else would be considered too personal.",
-  "sentence": "Parents (63) their own children to perform (64) to their directions, ( ___ ) should not expect the children of others to meet those requests with the same (66).",
+  "sentence": "Parents {{63|can expect}} their own children to perform {{64|according}} to their directions, ( ___ ) should not expect the children of others to meet those requests with the same {{66|motivation}}.",
   "choices": {
    "a": "although",
    "b": "but",
@@ -7308,7 +7320,7 @@
   "year": 2009,
   "exam_q": 66,
   "context": null,
-  "sentence": "Parents (63) their own children to perform (64) to their directions, (65) should not expect the children of others to meet those requests with the same ( ___ ).",
+  "sentence": "Parents {{63|can expect}} their own children to perform {{64|according}} to their directions, {{65|but}} should not expect the children of others to meet those requests with the same ( ___ ).",
   "choices": {
    "a": "help",
    "b": "motivation",
@@ -7330,7 +7342,7 @@
   "year": 2009,
   "exam_q": 67,
   "context": null,
-  "sentence": "In each of these cases ( ___ ) we observe that the (68) of the authority or acceptability of the individual's communicative behavior is that individual's job, profession, or role in life.",
+  "sentence": "In each of these cases ( ___ ) we observe that the {{68|source}} of the authority or acceptability of the individual's communicative behavior is that individual's job, profession, or role in life.",
   "choices": {
    "a": "declared",
    "b": "dismissed",
@@ -7354,7 +7366,7 @@
   "year": 2009,
   "exam_q": 68,
   "context": null,
-  "sentence": "In each of these cases (67) we observe that the ( ___ ) of the authority or acceptability of the individual's communicative behavior is that individual's job, profession, or role in life.",
+  "sentence": "In each of these cases {{67|mentioned}} we observe that the ( ___ ) of the authority or acceptability of the individual's communicative behavior is that individual's job, profession, or role in life.",
   "choices": {
    "a": "source",
    "b": "sourced",
@@ -7378,7 +7390,7 @@
   "year": 2009,
   "exam_q": 69,
   "context": null,
-  "sentence": "Indeed, your role ( ___ ) a great (70) on your speech communication.",
+  "sentence": "Indeed, your role ( ___ ) a great {{70|influence}} on your speech communication.",
   "choices": {
    "a": "appears",
    "b": "applies",
@@ -7402,7 +7414,7 @@
   "year": 2009,
   "exam_q": 70,
   "context": null,
-  "sentence": "Indeed, your role (69) a great ( ___ ) on your speech communication.",
+  "sentence": "Indeed, your role {{69|exerts}} a great ( ___ ) on your speech communication.",
   "choices": {
    "a": "authority",
    "b": "confidence",
@@ -7613,7 +7625,7 @@
   "year": 2008,
   "exam_q": 57,
   "context": "Certainly the music of 50,000 and 100,000 years ago is very different from Beethoven, Van Halen, or Eminem.",
-  "sentence": "( ___ ) our brains have evolved, so has the music we make with (58), and the music that we want to hear.",
+  "sentence": "( ___ ) our brains have evolved, so has the music we make with {{58|them}}, and the music that we want to hear.",
   "choices": {
    "a": "As",
    "b": "For",
@@ -7637,7 +7649,7 @@
   "year": 2008,
   "exam_q": 58,
   "context": null,
-  "sentence": "(57) our brains have evolved, so has the music we make with ( ___ ), and the music that we want to hear.",
+  "sentence": "{{57|As}} our brains have evolved, so has the music we make with ( ___ ), and the music that we want to hear.",
   "choices": {
    "a": "it",
    "b": "one",
@@ -7661,7 +7673,7 @@
   "year": 2008,
   "exam_q": 59,
   "context": null,
-  "sentence": "Did ( ___ ) regions and pathways evolve in our brains specifically (60) making and listening to music?",
+  "sentence": "Did ( ___ ) regions and pathways evolve in our brains specifically {{60|for}} making and listening to music?",
   "choices": {
    "a": "as particular",
    "b": "in particular",
@@ -7685,7 +7697,7 @@
   "year": 2008,
   "exam_q": 60,
   "context": null,
-  "sentence": "Did (59) regions and pathways evolve in our brains specifically ( ___ ) making and listening to music?",
+  "sentence": "Did {{59|particular}} regions and pathways evolve in our brains specifically ( ___ ) making and listening to music?",
   "choices": {
    "a": "for",
    "b": "in",
@@ -7707,7 +7719,7 @@
   "year": 2008,
   "exam_q": 61,
   "context": "Did particular regions and pathways evolve in our brains specifically for making and listening to music?",
-  "sentence": "( ___ ) to the old, simplistic notion that art and music (62) in the right hemisphere of our brains, and language and mathematics in the left, recent studies suggest that our sensitivity to music is (63) throughout the brain.",
+  "sentence": "( ___ ) to the old, simplistic notion that art and music {{62|are processed}} in the right hemisphere of our brains, and language and mathematics in the left, recent studies suggest that our sensitivity to music is {{63|distributed}} throughout the brain.",
   "choices": {
    "a": "Contrary",
    "b": "Contrast",
@@ -7731,7 +7743,7 @@
   "year": 2008,
   "exam_q": 62,
   "context": null,
-  "sentence": "(61) to the old, simplistic notion that art and music ( ___ ) in the right hemisphere of our brains, and language and mathematics in the left, recent studies suggest that our sensitivity to music is (63) throughout the brain.",
+  "sentence": "{{61|Contrary}} to the old, simplistic notion that art and music ( ___ ) in the right hemisphere of our brains, and language and mathematics in the left, recent studies suggest that our sensitivity to music is {{63|distributed}} throughout the brain.",
   "choices": {
    "a": "are processed",
    "b": "are processing",
@@ -7755,7 +7767,7 @@
   "year": 2008,
   "exam_q": 63,
   "context": null,
-  "sentence": "(61) to the old, simplistic notion that art and music (62) in the right hemisphere of our brains, and language and mathematics in the left, recent studies suggest that our sensitivity to music is ( ___ ) throughout the brain.",
+  "sentence": "{{61|Contrary}} to the old, simplistic notion that art and music {{62|are processed}} in the right hemisphere of our brains, and language and mathematics in the left, recent studies suggest that our sensitivity to music is ( ___ ) throughout the brain.",
   "choices": {
    "a": "alternated",
    "b": "contributed",
@@ -7821,7 +7833,7 @@
   "year": 2008,
   "exam_q": 66,
   "context": null,
-  "sentence": "Could this fact ( ___ ) claims that listening to music exercises other parts of our minds, that listening to Mozart twenty minutes a day (67) us smarter?",
+  "sentence": "Could this fact ( ___ ) claims that listening to music exercises other parts of our minds, that listening to Mozart twenty minutes a day {{67|will make}} us smarter?",
   "choices": {
    "a": "account for",
    "b": "act upon",
@@ -7845,7 +7857,7 @@
   "year": 2008,
   "exam_q": 67,
   "context": null,
-  "sentence": "Could this fact (66) claims that listening to music exercises other parts of our minds, that listening to Mozart twenty minutes a day ( ___ ) us smarter?",
+  "sentence": "Could this fact {{66|account for}} claims that listening to music exercises other parts of our minds, that listening to Mozart twenty minutes a day ( ___ ) us smarter?",
   "choices": {
    "a": "made",
    "b": "will be made",
@@ -7869,7 +7881,7 @@
   "year": 2008,
   "exam_q": 68,
   "context": null,
-  "sentence": "The power of music to evoke ( ___ ) is harnessed by (69) executives, filmmakers, and mothers.",
+  "sentence": "The power of music to evoke ( ___ ) is harnessed by {{69|advertising}} executives, filmmakers, and mothers.",
   "choices": {
    "a": "emotion",
    "b": "fear",
@@ -7886,14 +7898,15 @@
   ],
   "doc": "ENG-2008.pdf",
   "part": "II",
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "… Music is being used {{72|to manipulate}} our emotions, and we tend to accept, {{73|if}} not enjoy, the power of music to make us experience these different feelings."
  },
  {
   "id": "2008-P2-14",
   "year": 2008,
   "exam_q": 69,
   "context": null,
-  "sentence": "The power of music to evoke (68) is harnessed by ( ___ ) executives, filmmakers, and mothers.",
+  "sentence": "The power of music to evoke {{68|emotion}} is harnessed by ( ___ ) executives, filmmakers, and mothers.",
   "choices": {
    "a": "advertiser",
    "b": "advertise",
@@ -7917,7 +7930,7 @@
   "year": 2008,
   "exam_q": 70,
   "context": null,
-  "sentence": "Film directors use music to tell us how to feel about scenes that otherwise might be ( ___ ), or to intensify our feelings at particularly (71) moments, such as a chase scene in an action film.",
+  "sentence": "Film directors use music to tell us how to feel about scenes that otherwise might be ( ___ ), or to intensify our feelings at particularly {{71|dramatic}} moments, such as a chase scene in an action film.",
   "choices": {
    "a": "ambiguous",
    "b": "conceptual",
@@ -7939,7 +7952,7 @@
   "year": 2008,
   "exam_q": 71,
   "context": null,
-  "sentence": "Film directors use music to tell us how to feel about scenes that otherwise might be (70), or to intensify our feelings at particularly ( ___ ) moments, such as a chase scene in an action film.",
+  "sentence": "Film directors use music to tell us how to feel about scenes that otherwise might be {{70|ambiguous}}, or to intensify our feelings at particularly ( ___ ) moments, such as a chase scene in an action film.",
   "choices": {
    "a": "drama",
    "b": "dramatic",
@@ -7963,7 +7976,7 @@
   "year": 2008,
   "exam_q": 72,
   "context": null,
-  "sentence": "Music is being used ( ___ ) our emotions, and we tend to accept, (73) not enjoy, the power of music to make us experience these different feelings.",
+  "sentence": "Music is being used ( ___ ) our emotions, and we tend to accept, {{73|if}} not enjoy, the power of music to make us experience these different feelings.",
   "choices": {
    "a": "as manipulating",
    "b": "for manipulator",
@@ -7987,7 +8000,7 @@
   "year": 2008,
   "exam_q": 73,
   "context": null,
-  "sentence": "Music is being used (72) our emotions, and we tend to accept, ( ___ ) not enjoy, the power of music to make us experience these different feelings.",
+  "sentence": "Music is being used {{72|to manipulate}} our emotions, and we tend to accept, ( ___ ) not enjoy, the power of music to make us experience these different feelings.",
   "choices": {
    "a": "as",
    "b": "if",
@@ -8011,7 +8024,7 @@
   "year": 2008,
   "exam_q": 74,
   "context": null,
-  "sentence": "Mothers throughout the world, ( ___ ) time as we can imagine, have used soft singing to soothe their babies to sleep, or to (75) them from something that has made them cry.",
+  "sentence": "Mothers throughout the world, ( ___ ) time as we can imagine, have used soft singing to soothe their babies to sleep, or to {{75|distract}} them from something that has made them cry.",
   "choices": {
    "a": "as far back in",
    "b": "back in far as",
@@ -8035,7 +8048,7 @@
   "year": 2008,
   "exam_q": 75,
   "context": null,
-  "sentence": "Mothers throughout the world, (74) time as we can imagine, have used soft singing to soothe their babies to sleep, or to ( ___ ) them from something that has made them cry.",
+  "sentence": "Mothers throughout the world, {{74|as far back in}} time as we can imagine, have used soft singing to soothe their babies to sleep, or to ( ___ ) them from something that has made them cry.",
   "choices": {
    "a": "contract",
    "b": "distract",
@@ -8196,7 +8209,7 @@
   "year": 2007,
   "exam_q": 56,
   "context": null,
-  "sentence": "The use of graphics to show numbers is a ( ___ ) recent invention, (57) because of the diversity of skills required.",
+  "sentence": "The use of graphics to show numbers is a ( ___ ) recent invention, {{57|largely}} because of the diversity of skills required.",
   "choices": {
    "a": "currently",
    "b": "lately",
@@ -8218,7 +8231,7 @@
   "year": 2007,
   "exam_q": 57,
   "context": null,
-  "sentence": "The use of graphics to show numbers is a (56) recent invention, ( ___ ) because of the diversity of skills required.",
+  "sentence": "The use of graphics to show numbers is a {{56|surprisingly}} recent invention, ( ___ ) because of the diversity of skills required.",
   "choices": {
    "a": "and",
    "b": "however",
@@ -8240,7 +8253,7 @@
   "year": 2007,
   "exam_q": 58,
   "context": null,
-  "sentence": "It was ( ___ ) 1750-1800 that statistical graphics were invented, long after such (59) of mathematical ingenuity as logarithms, calculus, and the basics of probability theory.",
+  "sentence": "It was ( ___ ) 1750-1800 that statistical graphics were invented, long after such {{59|triumphs}} of mathematical ingenuity as logarithms, calculus, and the basics of probability theory.",
   "choices": {
    "a": "not until",
    "b": "only before",
@@ -8264,7 +8277,7 @@
   "year": 2007,
   "exam_q": 59,
   "context": null,
-  "sentence": "It was (58) 1750-1800 that statistical graphics were invented, long after such ( ___ ) of mathematical ingenuity as logarithms, calculus, and the basics of probability theory.",
+  "sentence": "It was {{58|not until}} 1750-1800 that statistical graphics were invented, long after such ( ___ ) of mathematical ingenuity as logarithms, calculus, and the basics of probability theory.",
   "choices": {
    "a": "convention",
    "b": "hopes",
@@ -8288,7 +8301,7 @@
   "year": 2007,
   "exam_q": 60,
   "context": null,
-  "sentence": "The ( ___ ) William Playfair (1759-1823) developed or improved (61) nearly all the fundamental graphical designs, (62) to replace conventional tables of numbers (63) the systematic visual representations of his \"linear arithmetic.\"",
+  "sentence": "The ( ___ ) William Playfair (1759-1823) developed or improved {{61|upon}} nearly all the fundamental graphical designs, {{62|seeking}} to replace conventional tables of numbers {{63|with}} the systematic visual representations of his \"linear arithmetic.\"",
   "choices": {
    "a": "remark",
    "b": "remarking",
@@ -8312,7 +8325,7 @@
   "year": 2007,
   "exam_q": 61,
   "context": null,
-  "sentence": "The (60) William Playfair (1759-1823) developed or improved ( ___ ) nearly all the fundamental graphical designs, (62) to replace conventional tables of numbers (63) the systematic visual representations of his \"linear arithmetic.\"",
+  "sentence": "The {{60|remarkable}} William Playfair (1759-1823) developed or improved ( ___ ) nearly all the fundamental graphical designs, {{62|seeking}} to replace conventional tables of numbers {{63|with}} the systematic visual representations of his \"linear arithmetic.\"",
   "choices": {
    "a": "by",
    "b": "for",
@@ -8336,7 +8349,7 @@
   "year": 2007,
   "exam_q": 62,
   "context": null,
-  "sentence": "The (60) William Playfair (1759-1823) developed or improved (61) nearly all the fundamental graphical designs, ( ___ ) to replace conventional tables of numbers (63) the systematic visual representations of his \"linear arithmetic.\"",
+  "sentence": "The {{60|remarkable}} William Playfair (1759-1823) developed or improved {{61|upon}} nearly all the fundamental graphical designs, ( ___ ) to replace conventional tables of numbers {{63|with}} the systematic visual representations of his \"linear arithmetic.\"",
   "choices": {
    "a": "had been seeking",
    "b": "had sought",
@@ -8360,7 +8373,7 @@
   "year": 2007,
   "exam_q": 63,
   "context": null,
-  "sentence": "The (60) William Playfair (1759-1823) developed or improved (61) nearly all the fundamental graphical designs, (62) to replace conventional tables of numbers ( ___ ) the systematic visual representations of his \"linear arithmetic.\"",
+  "sentence": "The {{60|remarkable}} William Playfair (1759-1823) developed or improved {{61|upon}} nearly all the fundamental graphical designs, {{62|seeking}} to replace conventional tables of numbers ( ___ ) the systematic visual representations of his \"linear arithmetic.\"",
   "choices": {
    "a": "along",
    "b": "as",
@@ -8406,7 +8419,7 @@
   "year": 2007,
   "exam_q": 65,
   "context": "Modern data graphics can do much more than simply substitute for small statistical tables.",
-  "sentence": "( ___ ) their best, graphics are (66) for reasoning about quantitative information.",
+  "sentence": "( ___ ) their best, graphics are {{66|instruments}} for reasoning about quantitative information.",
   "choices": {
    "a": "Above",
    "b": "At",
@@ -8430,7 +8443,7 @@
   "year": 2007,
   "exam_q": 66,
   "context": null,
-  "sentence": "(65) their best, graphics are ( ___ ) for reasoning about quantitative information.",
+  "sentence": "{{65|At}} their best, graphics are ( ___ ) for reasoning about quantitative information.",
   "choices": {
    "a": "instrument",
    "b": "instrumentalist",
@@ -8476,7 +8489,7 @@
   "year": 2007,
   "exam_q": 68,
   "context": "Often the most effective way to describe, explore, and summarize a set of numbers, even a very large set, is to look at pictures of those numbers.",
-  "sentence": "( ___ ), of all methods for analyzing and communicating statistical information, well-designed graphics are usually the simplest and (69) time the most powerful.",
+  "sentence": "( ___ ), of all methods for analyzing and communicating statistical information, well-designed graphics are usually the simplest and {{69|at the same}} time the most powerful.",
   "choices": {
    "a": "Although",
    "b": "Furthermore",
@@ -8498,7 +8511,7 @@
   "year": 2007,
   "exam_q": 69,
   "context": null,
-  "sentence": "(68), of all methods for analyzing and communicating statistical information, well-designed graphics are usually the simplest and ( ___ ) time the most powerful.",
+  "sentence": "{{68|Furthermore}}, of all methods for analyzing and communicating statistical information, well-designed graphics are usually the simplest and ( ___ ) time the most powerful.",
   "choices": {
    "a": "at",
    "b": "at the same",
@@ -8614,7 +8627,7 @@
   "year": 2007,
   "exam_q": 74,
   "context": null,
-  "sentence": "Some of the ( ___ ) changes introduced here are small, but others are substantial, with (75) for hundreds of billions of printed pages.",
+  "sentence": "Some of the ( ___ ) changes introduced here are small, but others are substantial, with {{75|consequences}} for hundreds of billions of printed pages.",
   "choices": {
    "a": "argument",
    "b": "persuasive",
@@ -8638,7 +8651,7 @@
   "year": 2007,
   "exam_q": 75,
   "context": null,
-  "sentence": "Some of the (74) changes introduced here are small, but others are substantial, with ( ___ ) for hundreds of billions of printed pages.",
+  "sentence": "Some of the {{74|suggested}} changes introduced here are small, but others are substantial, with ( ___ ) for hundreds of billions of printed pages.",
   "choices": {
    "a": "consequences",
    "b": "purposes",
@@ -8772,7 +8785,7 @@
   "year": 2006,
   "exam_q": 66,
   "context": null,
-  "sentence": "Naturalists from Aristotle on have been fascinated by scorpions, but it was ( ___ ) the introduction in the 1970s of a simple device, the portable ultraviolet light, that anything substantive (67) be learned about these princes of darkness.",
+  "sentence": "Naturalists from Aristotle on have been fascinated by scorpions, but it was ( ___ ) the introduction in the 1970s of a simple device, the portable ultraviolet light, that anything substantive {{67|could}} be learned about these princes of darkness.",
   "choices": {
    "a": "once with",
    "b": "only with",
@@ -8797,7 +8810,7 @@
   "year": 2006,
   "exam_q": 67,
   "context": null,
-  "sentence": "Naturalists from Aristotle on have been fascinated by scorpions, but it was (66) the introduction in the 1970s of a simple device, the portable ultraviolet light, that anything substantive ( ___ ) be learned about these princes of darkness.",
+  "sentence": "Naturalists from Aristotle on have been fascinated by scorpions, but it was {{66|only with}} the introduction in the 1970s of a simple device, the portable ultraviolet light, that anything substantive ( ___ ) be learned about these princes of darkness.",
   "choices": {
    "a": "could",
    "b": "may",
@@ -8819,7 +8832,7 @@
   "year": 2006,
   "exam_q": 68,
   "context": null,
-  "sentence": "One of the scorpion's ( ___ ) features is the fact that (69) under ultraviolet light like a psychedelic poster.",
+  "sentence": "One of the scorpion's ( ___ ) features is the fact that {{69|it glows}} under ultraviolet light like a psychedelic poster.",
   "choices": {
    "a": "exceptional",
    "b": "optional",
@@ -8841,7 +8854,7 @@
   "year": 2006,
   "exam_q": 69,
   "context": null,
-  "sentence": "One of the scorpion's (68) features is the fact that ( ___ ) under ultraviolet light like a psychedelic poster.",
+  "sentence": "One of the scorpion's {{68|exceptional}} features is the fact that ( ___ ) under ultraviolet light like a psychedelic poster.",
   "choices": {
    "a": "it glows",
    "b": "its glowed",
@@ -8890,7 +8903,7 @@
   "year": 2006,
   "exam_q": 71,
   "context": null,
-  "sentence": "This coat ( ___ ) the ultraviolet rays from moonlight and other light sources so brightly that even a black scorpion can (72) be a fluorescent shade of green or pink.",
+  "sentence": "This coat ( ___ ) the ultraviolet rays from moonlight and other light sources so brightly that even a black scorpion can {{72|appear to}} be a fluorescent shade of green or pink.",
   "choices": {
    "a": "attracts",
    "b": "protects",
@@ -8912,7 +8925,7 @@
   "year": 2006,
   "exam_q": 72,
   "context": null,
-  "sentence": "This coat (71) the ultraviolet rays from moonlight and other light sources so brightly that even a black scorpion can ( ___ ) be a fluorescent shade of green or pink.",
+  "sentence": "This coat {{71|reflects}} the ultraviolet rays from moonlight and other light sources so brightly that even a black scorpion can ( ___ ) be a fluorescent shade of green or pink.",
   "choices": {
    "a": "appear",
    "b": "appearance",
@@ -8960,7 +8973,7 @@
   "year": 2006,
   "exam_q": 74,
   "context": null,
-  "sentence": "The glow ( ___ ) to attract insects, (75) are drawn to ultraviolet light, or it may be an incidental byproduct of the chitin's chemical nature.",
+  "sentence": "The glow ( ___ ) to attract insects, {{75|which}} are drawn to ultraviolet light, or it may be an incidental byproduct of the chitin's chemical nature.",
   "choices": {
    "a": "maybe evolves",
    "b": "may evolve",
@@ -8984,7 +8997,7 @@
   "year": 2006,
   "exam_q": 75,
   "context": null,
-  "sentence": "The glow (74) to attract insects, ( ___ ) are drawn to ultraviolet light, or it may be an incidental byproduct of the chitin's chemical nature.",
+  "sentence": "The glow {{74|may have evolved}} to attract insects, ( ___ ) are drawn to ultraviolet light, or it may be an incidental byproduct of the chitin's chemical nature.",
   "choices": {
    "a": "those",
    "b": "what",
@@ -9006,7 +9019,7 @@
   "year": 2006,
   "exam_q": 76,
   "context": "The glow may have evolved to attract insects, which are drawn to ultraviolet light, or it may be an incidental byproduct of the chitin's chemical nature.",
-  "sentence": "( ___ ) the reason, the unmistakable shine, (77) from twenty feet away, makes (78) easy to spot scorpions at night, when they emerge to eat, mate, fight, swing their stingers, or simply lounge in the open air.",
+  "sentence": "( ___ ) the reason, the unmistakable shine, {{77|visible}} from twenty feet away, makes {{78|it}} easy to spot scorpions at night, when they emerge to eat, mate, fight, swing their stingers, or simply lounge in the open air.",
   "choices": {
    "a": "However",
    "b": "Instead of",
@@ -9030,7 +9043,7 @@
   "year": 2006,
   "exam_q": 77,
   "context": null,
-  "sentence": "(76) the reason, the unmistakable shine, ( ___ ) from twenty feet away, makes (78) easy to spot scorpions at night, when they emerge to eat, mate, fight, swing their stingers, or simply lounge in the open air.",
+  "sentence": "{{76|Whatever}} the reason, the unmistakable shine, ( ___ ) from twenty feet away, makes {{78|it}} easy to spot scorpions at night, when they emerge to eat, mate, fight, swing their stingers, or simply lounge in the open air.",
   "choices": {
    "a": "credible",
    "b": "envisioned",
@@ -9052,7 +9065,7 @@
   "year": 2006,
   "exam_q": 78,
   "context": null,
-  "sentence": "(76) the reason, the unmistakable shine, (77) from twenty feet away, makes ( ___ ) easy to spot scorpions at night, when they emerge to eat, mate, fight, swing their stingers, or simply lounge in the open air.",
+  "sentence": "{{76|Whatever}} the reason, the unmistakable shine, {{77|visible}} from twenty feet away, makes ( ___ ) easy to spot scorpions at night, when they emerge to eat, mate, fight, swing their stingers, or simply lounge in the open air.",
   "choices": {
    "a": "it",
    "b": "that",
@@ -9076,7 +9089,7 @@
   "year": 2006,
   "exam_q": 79,
   "context": null,
-  "sentence": "They ( ___ ) located, captured, marked, released, and recaptured for measurements of their metabolic rate, oxygen (80), and the like.",
+  "sentence": "They ( ___ ) located, captured, marked, released, and recaptured for measurements of their metabolic rate, oxygen {{80|consumption}}, and the like.",
   "choices": {
    "a": "can be",
    "b": "could",
@@ -9100,7 +9113,7 @@
   "year": 2006,
   "exam_q": 80,
   "context": null,
-  "sentence": "They (79) located, captured, marked, released, and recaptured for measurements of their metabolic rate, oxygen ( ___ ), and the like.",
+  "sentence": "They {{79|can be}} located, captured, marked, released, and recaptured for measurements of their metabolic rate, oxygen ( ___ ), and the like.",
   "choices": {
    "a": "consume",
    "b": "consuming",
@@ -9124,7 +9137,7 @@
   "year": 2006,
   "exam_q": 81,
   "context": "They can be located, captured, marked, released, and recaptured for measurements of their metabolic rate, oxygen consumption, and the like.",
-  "sentence": "( ___ ) these investigations, arachnologists learned that scorpions have changed little (82) the Silurian epoch, 400 million years ago, when they were pioneers in the quantum creep from sea to land.",
+  "sentence": "( ___ ) these investigations, arachnologists learned that scorpions have changed little {{82|since}} the Silurian epoch, 400 million years ago, when they were pioneers in the quantum creep from sea to land.",
   "choices": {
    "a": "Because",
    "b": "Over",
@@ -9146,7 +9159,7 @@
   "year": 2006,
   "exam_q": 82,
   "context": null,
-  "sentence": "(81) these investigations, arachnologists learned that scorpions have changed little ( ___ ) the Silurian epoch, 400 million years ago, when they were pioneers in the quantum creep from sea to land.",
+  "sentence": "{{81|Through}} these investigations, arachnologists learned that scorpions have changed little ( ___ ) the Silurian epoch, 400 million years ago, when they were pioneers in the quantum creep from sea to land.",
   "choices": {
    "a": "before",
    "b": "since",
@@ -9170,7 +9183,7 @@
   "year": 2006,
   "exam_q": 83,
   "context": "Through these investigations, arachnologists learned that scorpions have changed little since the Silurian epoch, 400 million years ago, when they were pioneers in the quantum creep from sea to land.",
-  "sentence": "( ___ ) firmly on the ground, they dispersed widely, and although they are commonly associated with the desert, (84) the fifteen hundred known species (85) every ecological niche and cranny: rain forests, temperate forests, savannahs, grasslands, suburbs, and cities.",
+  "sentence": "( ___ ) firmly on the ground, they dispersed widely, and although they are commonly associated with the desert, {{84|in fact}} the fifteen hundred known species {{85|occupy}} every ecological niche and cranny: rain forests, temperate forests, savannahs, grasslands, suburbs, and cities.",
   "choices": {
    "a": "By",
    "b": "In spite of",
@@ -9194,7 +9207,7 @@
   "year": 2006,
   "exam_q": 84,
   "context": "Through these investigations, arachnologists learned that scorpions have changed little since the Silurian epoch, 400 million years ago, when they were pioneers in the quantum creep from sea to land.",
-  "sentence": "(83) firmly on the ground, they dispersed widely, and although they are commonly associated with the desert, ( ___ ) the fifteen hundred known species (85) every ecological niche and cranny: rain forests, temperate forests, savannahs, grasslands, suburbs, and cities.",
+  "sentence": "{{83|Once}} firmly on the ground, they dispersed widely, and although they are commonly associated with the desert, ( ___ ) the fifteen hundred known species {{85|occupy}} every ecological niche and cranny: rain forests, temperate forests, savannahs, grasslands, suburbs, and cities.",
   "choices": {
    "a": "by nature",
    "b": "in fact",
@@ -9216,7 +9229,7 @@
   "year": 2006,
   "exam_q": 85,
   "context": null,
-  "sentence": "(83) firmly on the ground, they dispersed widely, and although they are commonly associated with the desert, (84) the fifteen hundred known species ( ___ ) every ecological niche and cranny: rain forests, temperate forests, savannahs, grasslands, suburbs, and cities.",
+  "sentence": "{{83|Once}} firmly on the ground, they dispersed widely, and although they are commonly associated with the desert, {{84|in fact}} the fifteen hundred known species ( ___ ) every ecological niche and cranny: rain forests, temperate forests, savannahs, grasslands, suburbs, and cities.",
   "choices": {
    "a": "multiply",
    "b": "occupy",
@@ -9348,7 +9361,7 @@
   "year": 2005,
   "exam_q": 66,
   "context": "Of course, when an open market allows us to expand our sales and profits, we think it's good.",
-  "sentence": "Much more often, ( ___ ), a competitive market means that someone (67) is out there producing the same goods and services at a lower price, (68) our profit and eventually, even our job.",
+  "sentence": "Much more often, ( ___ ), a competitive market means that someone {{67|else}} is out there producing the same goods and services at a lower price, {{68|threatening}} our profit and eventually, even our job.",
   "choices": {
    "a": "furthermore",
    "b": "however",
@@ -9372,7 +9385,7 @@
   "year": 2005,
   "exam_q": 67,
   "context": null,
-  "sentence": "Much more often, (66), a competitive market means that someone ( ___ ) is out there producing the same goods and services at a lower price, (68) our profit and eventually, even our job.",
+  "sentence": "Much more often, {{66|however}}, a competitive market means that someone ( ___ ) is out there producing the same goods and services at a lower price, {{68|threatening}} our profit and eventually, even our job.",
   "choices": {
    "a": "else",
    "b": "himself",
@@ -9394,7 +9407,7 @@
   "year": 2005,
   "exam_q": 68,
   "context": null,
-  "sentence": "Much more often, (66), a competitive market means that someone (67) is out there producing the same goods and services at a lower price, ( ___ ) our profit and eventually, even our job.",
+  "sentence": "Much more often, {{66|however}}, a competitive market means that someone {{67|else}} is out there producing the same goods and services at a lower price, ( ___ ) our profit and eventually, even our job.",
   "choices": {
    "a": "is threatening",
    "b": "threatened",
@@ -9418,7 +9431,7 @@
   "year": 2005,
   "exam_q": 69,
   "context": null,
-  "sentence": "Farmers, for instance, ask the government to ( ___ ) agricultural imports (70) that they can maintain the prices for their own farm goods.",
+  "sentence": "Farmers, for instance, ask the government to ( ___ ) agricultural imports {{70|so}} that they can maintain the prices for their own farm goods.",
   "choices": {
    "a": "censor",
    "b": "export",
@@ -9440,7 +9453,7 @@
   "year": 2005,
   "exam_q": 70,
   "context": "Much more often, however, a competitive market means that someone else is out there producing the same goods and services at a lower price, threatening our profit and eventually, even our job.",
-  "sentence": "Farmers, for instance, ask the government to (69) agricultural imports ( ___ ) that they can maintain the prices for their own farm goods.",
+  "sentence": "Farmers, for instance, ask the government to {{69|restrict}} agricultural imports ( ___ ) that they can maintain the prices for their own farm goods.",
   "choices": {
    "a": "by",
    "b": "in",
@@ -9463,7 +9476,7 @@
   "id": "2005-P2-06",
   "year": 2005,
   "exam_q": 71,
-  "context": null,
+  "context": "Farmers, for instance, ask the government to {{69|restrict}} agricultural imports {{70|so}} that they can maintain the prices for their own farm goods.",
   "sentence": "That ( ___ ) promotes competition.",
   "choices": {
    "a": "exactly",
@@ -9488,7 +9501,7 @@
   "year": 2005,
   "exam_q": 72,
   "context": null,
-  "sentence": "Another example: When competition—either domestic or foreign—( ___ ) companies to reduce wages, laborers are the first to (73).",
+  "sentence": "Another example: When competition—either domestic or foreign—( ___ ) companies to reduce wages, laborers are the first to {{73|protest}}.",
   "choices": {
    "a": "admits",
    "b": "creates",
@@ -9512,7 +9525,7 @@
   "year": 2005,
   "exam_q": 73,
   "context": null,
-  "sentence": "Another example: When competition—either domestic or foreign—(72) companies to reduce wages, laborers are the first to ( ___ ).",
+  "sentence": "Another example: When competition—either domestic or foreign—{{72|forces}} companies to reduce wages, laborers are the first to ( ___ ).",
   "choices": {
    "a": "pretend",
    "b": "prevail",
@@ -9551,14 +9564,15 @@
   ],
   "doc": "ENG-2005.pdf",
   "part": "II",
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "They prefer market stability, which means the preservation—or expansion—of their market share."
  },
  {
   "id": "2005-P2-10",
   "year": 2005,
   "exam_q": 75,
   "context": "They prefer market stability, which means the preservation—or expansion—of their market share.",
-  "sentence": "( ___ ), corporations want to control prices (76) they can minimize production costs and maximize profits.",
+  "sentence": "( ___ ), corporations want to control prices {{76|so that}} they can minimize production costs and maximize profits.",
   "choices": {
    "a": "Approximately",
    "b": "Besides",
@@ -9580,7 +9594,7 @@
   "year": 2005,
   "exam_q": 76,
   "context": "They prefer market stability, which means the preservation—or expansion—of their market share.",
-  "sentence": "(75), corporations want to control prices ( ___ ) they can minimize production costs and maximize profits.",
+  "sentence": "{{75|Ultimately}}, corporations want to control prices ( ___ ) they can minimize production costs and maximize profits.",
   "choices": {
    "a": "in order",
    "b": "prior to",
@@ -9628,7 +9642,7 @@
   "year": 2005,
   "exam_q": 78,
   "context": null,
-  "sentence": "Much of the motivation for merging with or acquiring another company is best understood ( ___ ) controlling market uncertainties by reducing competition (79) gaining a competitive advantage.",
+  "sentence": "Much of the motivation for merging with or acquiring another company is best understood ( ___ ) controlling market uncertainties by reducing competition {{79|and thus}} gaining a competitive advantage.",
   "choices": {
    "a": "as a means of",
    "b": "as meant for",
@@ -9652,7 +9666,7 @@
   "year": 2005,
   "exam_q": 79,
   "context": "First of all, they can buy their competitors.",
-  "sentence": "Much of the motivation for merging with or acquiring another company is best understood (78) controlling market uncertainties by reducing competition ( ___ ) gaining a competitive advantage.",
+  "sentence": "Much of the motivation for merging with or acquiring another company is best understood {{78|as a means of}} controlling market uncertainties by reducing competition ( ___ ) gaining a competitive advantage.",
   "choices": {
    "a": "and thus",
    "b": "but not",
@@ -9673,7 +9687,7 @@
   "id": "2005-P2-15",
   "year": 2005,
   "exam_q": 80,
-  "context": null,
+  "context": "{{75|Ultimately}}, corporations want to control prices {{76|so that}} they can minimize production costs and maximize profits. …",
   "sentence": "Second, corporations try to ( ___ ) the market by withholding knowledge, especially technological knowledge.",
   "choices": {
    "a": "control",
@@ -9696,7 +9710,7 @@
   "year": 2005,
   "exam_q": 81,
   "context": "Second, corporations try to control the market by withholding knowledge, especially technological knowledge.",
-  "sentence": "( ___ ) the results of their research and development secret, they can (82) their competitors from fully competing with them.",
+  "sentence": "( ___ ) the results of their research and development secret, they can {{82|prevent}} their competitors from fully competing with them.",
   "choices": {
    "a": "By keeping",
    "b": "Keeping back",
@@ -9720,7 +9734,7 @@
   "year": 2005,
   "exam_q": 82,
   "context": null,
-  "sentence": "(81) the results of their research and development secret, they can ( ___ ) their competitors from fully competing with them.",
+  "sentence": "{{81|By keeping}} the results of their research and development secret, they can ( ___ ) their competitors from fully competing with them.",
   "choices": {
    "a": "fool",
    "b": "hide",
@@ -9949,7 +9963,7 @@
   "year": 2004,
   "exam_q": 66,
   "context": null,
-  "sentence": "From ( ___ ) times people have wondered about the cyclical motions of the stars and planets, the endless rounds of days and seasons, the (67) of nature's operations, and the rhythmic patterns of order in the world (68) them.",
+  "sentence": "From ( ___ ) times people have wondered about the cyclical motions of the stars and planets, the endless rounds of days and seasons, the {{67|consistency}} of nature's operations, and the rhythmic patterns of order in the world {{68|around}} them.",
   "choices": {
    "a": "beyond",
    "b": "earliest",
@@ -9971,7 +9985,7 @@
   "year": 2004,
   "exam_q": 67,
   "context": null,
-  "sentence": "From (66) times people have wondered about the cyclical motions of the stars and planets, the endless rounds of days and seasons, the ( ___ ) of nature's operations, and the rhythmic patterns of order in the world (68) them.",
+  "sentence": "From {{66|earliest}} times people have wondered about the cyclical motions of the stars and planets, the endless rounds of days and seasons, the ( ___ ) of nature's operations, and the rhythmic patterns of order in the world {{68|around}} them.",
   "choices": {
    "a": "consistency",
    "b": "necessity",
@@ -9993,7 +10007,7 @@
   "year": 2004,
   "exam_q": 68,
   "context": null,
-  "sentence": "From (66) times people have wondered about the cyclical motions of the stars and planets, the endless rounds of days and seasons, the (67) of nature's operations, and the rhythmic patterns of order in the world ( ___ ) them.",
+  "sentence": "From {{66|earliest}} times people have wondered about the cyclical motions of the stars and planets, the endless rounds of days and seasons, the {{67|consistency}} of nature's operations, and the rhythmic patterns of order in the world ( ___ ) them.",
   "choices": {
    "a": "among",
    "b": "around",
@@ -10059,7 +10073,7 @@
   "year": 2004,
   "exam_q": 71,
   "context": null,
-  "sentence": "Today, of course, we know that the cosmos ( ___ ) than the ancients (72) imagined, an order that can be described (73) mathematical equations, physical and chemical formulas, and psycho-biological processes.",
+  "sentence": "Today, of course, we know that the cosmos ( ___ ) than the ancients {{72|could have}} imagined, an order that can be described {{73|in terms of}} mathematical equations, physical and chemical formulas, and psycho-biological processes.",
   "choices": {
    "a": "is more order",
    "b": "has more order",
@@ -10081,7 +10095,7 @@
   "year": 2004,
   "exam_q": 72,
   "context": null,
-  "sentence": "Today, of course, we know that the cosmos (71) than the ancients ( ___ ) imagined, an order that can be described (73) mathematical equations, physical and chemical formulas, and psycho-biological processes.",
+  "sentence": "Today, of course, we know that the cosmos {{71|has more order}} than the ancients ( ___ ) imagined, an order that can be described {{73|in terms of}} mathematical equations, physical and chemical formulas, and psycho-biological processes.",
   "choices": {
    "a": "can have",
    "b": "could have",
@@ -10103,7 +10117,7 @@
   "year": 2004,
   "exam_q": 73,
   "context": null,
-  "sentence": "Today, of course, we know that the cosmos (71) than the ancients (72) imagined, an order that can be described ( ___ ) mathematical equations, physical and chemical formulas, and psycho-biological processes.",
+  "sentence": "Today, of course, we know that the cosmos {{71|has more order}} than the ancients {{72|could have}} imagined, an order that can be described ( ___ ) mathematical equations, physical and chemical formulas, and psycho-biological processes.",
   "choices": {
    "a": "by terms of",
    "b": "for terms in",
@@ -10125,7 +10139,7 @@
   "year": 2004,
   "exam_q": 74,
   "context": null,
-  "sentence": "Living organisms have ( ___ ) life-cycle rhythms, (75) determined for each by an incredibly complicated DNA code.",
+  "sentence": "Living organisms have ( ___ ) life-cycle rhythms, {{75|largely}} determined for each by an incredibly complicated DNA code.",
   "choices": {
    "a": "distinction",
    "b": "distinctive",
@@ -10147,7 +10161,7 @@
   "year": 2004,
   "exam_q": 75,
   "context": null,
-  "sentence": "Living organisms have (74) life-cycle rhythms, ( ___ ) determined for each by an incredibly complicated DNA code.",
+  "sentence": "Living organisms have {{74|distinctive}} life-cycle rhythms, ( ___ ) determined for each by an incredibly complicated DNA code.",
   "choices": {
    "a": "about",
    "b": "almost",
@@ -10169,7 +10183,7 @@
   "year": 2004,
   "exam_q": 76,
   "context": null,
-  "sentence": "We also know that cosmic processes—involving suns, galaxies, and perhaps ( ___ ) the pulsating universe itself—run through ordered (77) resembling birth, life, and death.",
+  "sentence": "We also know that cosmic processes—involving suns, galaxies, and perhaps ( ___ ) the pulsating universe itself—run through ordered {{77|sequences}} resembling birth, life, and death.",
   "choices": {
    "a": "even",
    "b": "over",
@@ -10191,7 +10205,7 @@
   "year": 2004,
   "exam_q": 77,
   "context": null,
-  "sentence": "We also know that cosmic processes—involving suns, galaxies, and perhaps (76) the pulsating universe itself—run through ordered ( ___ ) resembling birth, life, and death.",
+  "sentence": "We also know that cosmic processes—involving suns, galaxies, and perhaps {{76|even}} the pulsating universe itself—run through ordered ( ___ ) resembling birth, life, and death.",
   "choices": {
    "a": "consequences",
    "b": "probabilities",
@@ -10228,7 +10242,8 @@
   "tags": [],
   "doc": "ENG-2004.pdf",
   "part": "II",
-  "answer_source": "derived"
+  "answer_source": "derived",
+  "context_after": "… The ordered world {{82|as we know it}} cannot be accounted for apart from the ordering of a Cosmic Intelligence."
  },
  {
   "id": "2004-P2-14",
@@ -10257,7 +10272,7 @@
   "year": 2004,
   "exam_q": 80,
   "context": "Our minds order our experiences of reality.",
-  "sentence": "( ___ ), there must be a Cosmic Mind pervading reality itself and operating (81) similar ends.",
+  "sentence": "( ___ ), there must be a Cosmic Mind pervading reality itself and operating {{81|towards}} similar ends.",
   "choices": {
    "a": "Although",
    "b": "Instead",
@@ -10279,7 +10294,7 @@
   "year": 2004,
   "exam_q": 81,
   "context": null,
-  "sentence": "(80), there must be a Cosmic Mind pervading reality itself and operating ( ___ ) similar ends.",
+  "sentence": "{{80|Likewise}}, there must be a Cosmic Mind pervading reality itself and operating ( ___ ) similar ends.",
   "choices": {
    "a": "around",
    "b": "in",
@@ -10323,7 +10338,7 @@
   "year": 2004,
   "exam_q": 83,
   "context": "The ordered world as we know it cannot be accounted for apart from the ordering of a Cosmic Intelligence.",
-  "sentence": "This teleological argument—( ___ ) the word \"teleology\" indicates—has to do with direction or destination and it was the (84) of life and the movements of evolution that seemed to demonstrate most clearly the (85) of directive intelligence.",
+  "sentence": "This teleological argument—( ___ ) the word \"teleology\" indicates—has to do with direction or destination and it was the {{84|development}} of life and the movements of evolution that seemed to demonstrate most clearly the {{85|possibility}} of directive intelligence.",
   "choices": {
    "a": "as",
    "b": "for",
@@ -10345,7 +10360,7 @@
   "year": 2004,
   "exam_q": 84,
   "context": null,
-  "sentence": "This teleological argument—(83) the word \"teleology\" indicates—has to do with direction or destination and it was the ( ___ ) of life and the movements of evolution that seemed to demonstrate most clearly the (85) of directive intelligence.",
+  "sentence": "This teleological argument—{{83|as}} the word \"teleology\" indicates—has to do with direction or destination and it was the ( ___ ) of life and the movements of evolution that seemed to demonstrate most clearly the {{85|possibility}} of directive intelligence.",
   "choices": {
    "a": "destruction",
    "b": "development",
@@ -10367,7 +10382,7 @@
   "year": 2004,
   "exam_q": 85,
   "context": null,
-  "sentence": "This teleological argument—(83) the word \"teleology\" indicates—has to do with direction or destination and it was the (84) of life and the movements of evolution that seemed to demonstrate most clearly the ( ___ ) of directive intelligence.",
+  "sentence": "This teleological argument—{{83|as}} the word \"teleology\" indicates—has to do with direction or destination and it was the {{84|development}} of life and the movements of evolution that seemed to demonstrate most clearly the ( ___ ) of directive intelligence.",
   "choices": {
    "a": "permission",
    "b": "perceptiveness",

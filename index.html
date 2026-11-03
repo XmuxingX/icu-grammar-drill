@@ -40,6 +40,9 @@ h3{font-size:16px;margin:14px 0 6px}
 .tag.off{border-color:var(--ok);color:var(--ok)}
 .tag.warn{background:var(--warnbg);color:var(--warn);border-color:transparent}
 .ctx{color:var(--mut);font-size:15px;margin:0 0 6px}
+.ctx.aft{margin:-2px 0 8px}
+.fill{border-bottom:1px dotted currentColor}
+.fill sup{font-size:10px;color:var(--mut);margin-right:1px;font-weight:600}
 .sent{font-size:17px;margin:0 0 8px}
 .stem{font-weight:600;margin:6px 0}
 .blank{display:inline-block;min-width:3.2em;border-bottom:2px solid var(--acc);text-align:center;color:var(--acc);font-weight:700}
@@ -212,9 +215,11 @@ function wz(t){ // テキスト→単語ごとに span（すべての英単語�
     i=off+m.length;return m});
   return out+esc(t.slice(i));
 }
-function rich(t){ // [[下線]] と ( ___ ) を処理
-  return String(t??'').split(/(\[\[.*?\]\]|\(\s*_{2,}\s*\))/).map(p=>{
+function rich(t,hide){ // [[下線]]・( ___ )・{{N|語}}（ほかの空欄の正解を補った語）を処理
+  return String(t??'').split(/(\[\[.*?\]\]|\(\s*_{2,}\s*\)|\{\{\d+\|[^}]*\}\})/).map(p=>{
     if(/^\[\[/.test(p))return '<u class="tg">'+wz(p.slice(2,-2))+'</u>';
+    const f=p.match(/^\{\{(\d+)\|([^}]*)\}\}$/);
+    if(f)return hide?'( '+f[1]+' )':'<span class="fill" title="別の空欄（第'+f[1]+'問）の正解"><sup>'+f[1]+'</sup>'+wz(f[2])+'</span>';
     if(/^\(\s*_/.test(p))return '<span class="blank">( &nbsp; )</span>';
     return wz(p)}).join('');
 }
@@ -272,10 +277,11 @@ function qCard(q,opts={}){
   const el=document.createElement('div');el.className='card'+(opts.cls?' '+opts.cls:'');el.dataset.qid=q.id;
   let h='<div class="meta"><span>'+esc(srcLabel(q))+'</span><span class="tag">'+esc(catName(q.category))+'</span></div>';
   if(opts.passage)h+='<p class="sent">'+rich(opts.passage)+'</p>';
-  else if(opts.noText)h+='<p class="ctx">'+rich(q.sentence)+'</p>';
+  else if(opts.noText)h+='<p class="ctx">'+rich(q.sentence,true)+'</p>';
   else{
     if(q.context)h+='<p class="ctx">'+rich(q.context)+'</p>';
     h+='<p class="sent">'+rich(q.sentence)+'</p>';
+    if(q.context_after)h+='<p class="ctx aft">'+rich(q.context_after)+'</p>'; // 答えの手がかりが後ろの文にある問題
   }
   if(q.stem)h+='<p class="stem">'+rich(q.stem)+'</p>';
   h+='<div class="choices">'+['a','b','c','d'].filter(k=>q.choices[k]!=null).map(k=>'<button class="ch" data-k="'+k+'"><span class="k">'+k+'</span><span class="grow">'+rich(q.choices[k])+'</span></button>').join('')+'</div>';
@@ -360,6 +366,15 @@ function home(){
   if(wl.length){$('#goW10').onclick=()=>route('quiz',{title:'苦手復習',qs:weakList().slice(0,10)});$('#goWA').onclick=()=>route('quiz',{title:'苦手復習',qs:weakList()})}
   app.querySelectorAll('.yr button').forEach(b=>b.onclick=()=>route('year',{y:b.dataset.y}));
 }
+// 年度別 Part I の段落: context / context_after の文が段落になければ補う（" … " は省略箇所）
+function p1Text(para,q){
+  const plain=t=>String(t||'').replace(/\{\{\d+\|([^}]*)\}\}/g,'$1');
+  const segs=t=>plain(t).split(' … ').map(x=>x.replace(/^…\s*|\s*…$/g,'').trim()).filter(Boolean);
+  if(!para)return [q.context,q.sentence,q.context_after].filter(Boolean).join(' ');
+  const pre=segs(q.context).filter(x=>!para.includes(x)),post=segs(q.context_after).filter(x=>!para.includes(x));
+  const preGap=pre.length<segs(q.context).length||/…\s*$/.test(q.context||''),postGap=post.length<segs(q.context_after).length||/^\s*…/.test(q.context_after||'');
+  return (pre.length?pre.join(' … ')+(preGap?' … ':' '):'')+para+(post.length?(postGap?' … ':' ')+post.join(' … '):'');
+}
 function filt(){return BANK.filter(q=>(F.part==='all'||q.part===F.part)&&(F.cat==='all'||q.category===F.cat))}
 
 function quiz({title,qs}){
@@ -416,7 +431,7 @@ function year({y}){
         const q=p1[idx-p2.length];
         const box=$('#p1');
         if(!box.dataset.h){box.dataset.h=1;box.insertAdjacentHTML('beforeend','<h3>Part I（読解の語彙・語法問題）</h3>')}
-        const card=qCard(q,{passage:P.part1_paragraphs[q.id]||((q.context||'')+' '+q.sentence),cls:'qcard',onAnswer:ok=>{if(ok)score++;else wrong.push(q);idx++;upd()},next:{label:idx===total-1?'結果を見る':'次へ',fn:()=>{card.classList.remove('qcard');card.querySelector('.nx')?.remove();step()}}});
+        const card=qCard(q,{passage:p1Text(P.part1_paragraphs[q.id],q),cls:'qcard',onAnswer:ok=>{if(ok)score++;else wrong.push(q);idx++;upd()},next:{label:idx===total-1?'結果を見る':'次へ',fn:()=>{card.classList.remove('qcard');card.querySelector('.nx')?.remove();step()}}});
         box.appendChild(card);setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'start'}),30);
       }else finish();
     };
